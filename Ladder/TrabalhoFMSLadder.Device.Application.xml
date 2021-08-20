@@ -32,6 +32,12 @@
         <Node name="VisionSensor2" type="T_BOOL" access="ReadWrite" />
       </Node>
       <Node name="RobosDaora">
+        <Node name="BotaoSupLiga1" type="T_BOOL" access="ReadWrite" />
+        <Node name="BotaoSupLiga2" type="T_BOOL" access="ReadWrite" />
+        <Node name="BotaoSupPara1" type="T_BOOL" access="ReadWrite" />
+        <Node name="BotaoSupPara2" type="T_BOOL" access="ReadWrite" />
+        <Node name="BotaoSupReset1" type="T_BOOL" access="ReadWrite" />
+        <Node name="BotaoSupReset2" type="T_BOOL" access="ReadWrite" />
         <Node name="MachinigCenter1Reset" type="T_BOOL" access="ReadWrite" />
         <Node name="MachinigCenter1Start" type="T_BOOL" access="ReadWrite" />
         <Node name="MachinigCenter1Stop" type="T_BOOL" access="ReadWrite" />
