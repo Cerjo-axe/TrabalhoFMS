@@ -11,25 +11,25 @@
   <NodeList>
     <Node name="Application">
       <Node name="LinhaEntradaTampa">
-        <Node name="ArmBelt" type="T_BOOL" access="ReadWrite" />
-        <Node name="ArmSorter" type="T_BOOL" access="ReadWrite" />
-        <Node name="Conveyor4m1" type="T_BOOL" access="ReadWrite" />
-        <Node name="Conveyor6m3" type="T_BOOL" access="ReadWrite" />
-        <Node name="VisionSensor3" type="T_BOOL" access="ReadWrite" />
+        <Node name="ArmBeltCLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="ArmSorterCLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="Conveyor4m1CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="Conveyor6m3CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="VisionSensor3CLP" type="T_BOOL" access="ReadWrite" />
       </Node>
       <Node name="LinhaFabricacao">
-        <Node name="Conveyor6m1" type="T_BOOL" access="ReadWrite" />
-        <Node name="Conveyor6m2" type="T_BOOL" access="ReadWrite" />
-        <Node name="ConveyorGate1" type="T_BOOL" access="ReadWrite" />
-        <Node name="ConveyorGate1Open" type="T_BOOL" access="ReadWrite" />
-        <Node name="Pusher1" type="T_BOOL" access="ReadWrite" />
-        <Node name="Pusher2" type="T_BOOL" access="ReadWrite" />
-        <Node name="SensorDifuso1" type="T_BOOL" access="ReadWrite" />
-        <Node name="SensorDifuso2" type="T_BOOL" access="ReadWrite" />
-        <Node name="StopBlade1" type="T_BOOL" access="ReadWrite" />
-        <Node name="StopBlade2" type="T_BOOL" access="ReadWrite" />
-        <Node name="VisionSensor1" type="T_BOOL" access="ReadWrite" />
-        <Node name="VisionSensor2" type="T_BOOL" access="ReadWrite" />
+        <Node name="Conveyor6m1CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="Conveyor6m2CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="ConveyorGate1CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="ConveyorGate1OpenCLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="Pusher1CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="Pusher2CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="SensorDifuso1CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="SensorDifuso2CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="StopBlade1CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="StopBlade2CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="VisionSensor1CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="VisionSensor2CLP" type="T_BOOL" access="ReadWrite" />
       </Node>
       <Node name="RobosDaora">
         <Node name="BotaoSupLiga1" type="T_BOOL" access="ReadWrite" />
@@ -38,12 +38,12 @@
         <Node name="BotaoSupPara2" type="T_BOOL" access="ReadWrite" />
         <Node name="BotaoSupReset1" type="T_BOOL" access="ReadWrite" />
         <Node name="BotaoSupReset2" type="T_BOOL" access="ReadWrite" />
-        <Node name="MachinigCenter1Reset" type="T_BOOL" access="ReadWrite" />
-        <Node name="MachinigCenter1Start" type="T_BOOL" access="ReadWrite" />
-        <Node name="MachinigCenter1Stop" type="T_BOOL" access="ReadWrite" />
-        <Node name="MachinigCenter2Reset" type="T_BOOL" access="ReadWrite" />
-        <Node name="MachinigCenter2Start" type="T_BOOL" access="ReadWrite" />
-        <Node name="MachinigCenter2Stop" type="T_BOOL" access="ReadWrite" />
+        <Node name="MachinigCenter1ResetCLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="MachinigCenter1StartCLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="MachinigCenter1StopCLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="MachinigCenter2ResetCLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="MachinigCenter2StartCLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="MachinigCenter2StopCLP" type="T_BOOL" access="ReadWrite" />
       </Node>
     </Node>
   </NodeList>
