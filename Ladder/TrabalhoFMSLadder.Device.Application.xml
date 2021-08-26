@@ -7,9 +7,22 @@
   </Header>
   <TypeList>
     <TypeSimple name="T_BOOL" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" />
+    <TypeSimple name="T_LREAL" size="8" swapsize="8" typeclass="LReal" iecname="LREAL" />
   </TypeList>
   <NodeList>
     <Node name="Application">
+      <Node name="EstacaoTampa">
+        <Node name="Conveyor2m3CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="Pick1GrabCLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="Pick1XSetPointCLP" type="T_LREAL" access="ReadWrite" />
+        <Node name="Pick1YSetPointCLP" type="T_LREAL" access="ReadWrite" />
+        <Node name="Pick1ZSetPointCLP" type="T_LREAL" access="ReadWrite" />
+        <Node name="PickSensorCLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="StopBladeCLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="VisionSensor4_0CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="VisionSensor4_1CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="VisionSensor4_2CLP" type="T_BOOL" access="ReadWrite" />
+      </Node>
       <Node name="LinhaEntradaTampa">
         <Node name="ArmBeltCLP" type="T_BOOL" access="ReadWrite" />
         <Node name="ArmSorterCLP" type="T_BOOL" access="ReadWrite" />
@@ -30,6 +43,14 @@
         <Node name="StopBlade2CLP" type="T_BOOL" access="ReadWrite" />
         <Node name="VisionSensor1CLP" type="T_BOOL" access="ReadWrite" />
         <Node name="VisionSensor2CLP" type="T_BOOL" access="ReadWrite" />
+      </Node>
+      <Node name="LinhaSaidaUsinagem">
+        <Node name="Conveyor2m1CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="Conveyor4m2CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="EsteiraUsinada1CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="PortaoUsinadaOpenCLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="SensorDifuso5CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="StopBlade7CLP" type="T_BOOL" access="ReadWrite" />
       </Node>
       <Node name="RobosDaora">
         <Node name="BotaoSupLiga1" type="T_BOOL" access="ReadWrite" />
