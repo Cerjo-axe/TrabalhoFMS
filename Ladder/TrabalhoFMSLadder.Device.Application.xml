@@ -11,6 +11,17 @@
   </TypeList>
   <NodeList>
     <Node name="Application">
+      <Node name="EstacaoPallet">
+        <Node name="belt_conveyor_3_CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="chain_tranfer_mais_1_CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="chain_transfer_left_CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="diffuse_sensor_3_CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="diffuse_sensor_4_CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="RollerConveyor2m5CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="two_axis_grab_CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="two_axis_pick_x_CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="two_axis_pick_z_CLP" type="T_BOOL" access="ReadWrite" />
+      </Node>
       <Node name="EstacaoTampa">
         <Node name="Conveyor2m3CLP" type="T_BOOL" access="ReadWrite" />
         <Node name="Pick1GrabCLP" type="T_BOOL" access="ReadWrite" />
@@ -47,6 +58,7 @@
       <Node name="LinhaSaidaUsinagem">
         <Node name="Conveyor2m1CLP" type="T_BOOL" access="ReadWrite" />
         <Node name="Conveyor4m2CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="EsteiraPortaoUsinadaCLP" type="T_BOOL" access="ReadWrite" />
         <Node name="EsteiraUsinada1CLP" type="T_BOOL" access="ReadWrite" />
         <Node name="PortaoUsinadaOpenCLP" type="T_BOOL" access="ReadWrite" />
         <Node name="SensorDifuso5CLP" type="T_BOOL" access="ReadWrite" />
