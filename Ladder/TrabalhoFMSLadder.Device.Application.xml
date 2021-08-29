@@ -93,6 +93,14 @@
         <Node name="MachinigCenter2StartCLP" type="T_BOOL" access="ReadWrite" />
         <Node name="MachinigCenter2StopCLP" type="T_BOOL" access="ReadWrite" />
       </Node>
+      <Node name="SaidaPecas">
+        <Node name="RollerConveyot2m2CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="TunableBackLimitCLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="TunableFrontLimitCLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="TunableRollmaisCLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="TunableTurnCLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="VisionSensor5CLP" type="T_BOOL" access="ReadWrite" />
+      </Node>
     </Node>
   </NodeList>
 </Symbolconfiguration>
