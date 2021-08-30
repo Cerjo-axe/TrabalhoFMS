@@ -24,7 +24,6 @@
         <Node name="LoadCOnveyorCLP" type="T_BOOL" access="ReadWrite" />
         <Node name="MovingXCLP" type="T_BOOL" access="ReadWrite" />
         <Node name="TargetPositionCLP" type="T_INT" access="ReadWrite" />
-        <Node name="UnloadConveyorCLP" type="T_BOOL" access="ReadWrite" />
       </Node>
       <Node name="EstacaoPallet">
         <Node name="belt_conveyor_4m3_clp" type="T_BOOL" access="ReadWrite" />
@@ -43,7 +42,6 @@
         <Node name="Pick1XSetPointCLP" type="T_LREAL" access="ReadWrite" />
         <Node name="Pick1YSetPointCLP" type="T_LREAL" access="ReadWrite" />
         <Node name="Pick1ZSetPointCLP" type="T_LREAL" access="ReadWrite" />
-        <Node name="PickSensorCLP" type="T_BOOL" access="ReadWrite" />
         <Node name="StopBlade4CLP" type="T_BOOL" access="ReadWrite" />
         <Node name="VisionSensor4_0CLP" type="T_BOOL" access="ReadWrite" />
         <Node name="VisionSensor4_1CLP" type="T_BOOL" access="ReadWrite" />
