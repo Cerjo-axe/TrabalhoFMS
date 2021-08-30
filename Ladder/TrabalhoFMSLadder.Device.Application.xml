@@ -27,15 +27,15 @@
         <Node name="UnloadConveyorCLP" type="T_BOOL" access="ReadWrite" />
       </Node>
       <Node name="EstacaoPallet">
-        <Node name="belt_conveyor_3_CLP" type="T_BOOL" access="ReadWrite" />
-        <Node name="chain_tranfer_mais_1_CLP" type="T_BOOL" access="ReadWrite" />
-        <Node name="chain_transfer_left_CLP" type="T_BOOL" access="ReadWrite" />
-        <Node name="diffuse_sensor_3_CLP" type="T_BOOL" access="ReadWrite" />
-        <Node name="diffuse_sensor_4_CLP" type="T_BOOL" access="ReadWrite" />
-        <Node name="RollerConveyor2m5CLP" type="T_BOOL" access="ReadWrite" />
-        <Node name="two_axis_grab_CLP" type="T_BOOL" access="ReadWrite" />
-        <Node name="two_axis_pick_x_CLP" type="T_BOOL" access="ReadWrite" />
-        <Node name="two_axis_pick_z_CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="belt_conveyor_4m3_clp" type="T_BOOL" access="ReadWrite" />
+        <Node name="chain_tranfer_mais_1_clp" type="T_BOOL" access="ReadWrite" />
+        <Node name="chain_transfer_left_clp" type="T_BOOL" access="ReadWrite" />
+        <Node name="diffuse_sensor_3_clp" type="T_BOOL" access="ReadWrite" />
+        <Node name="diffuse_sensor_4_clp" type="T_BOOL" access="ReadWrite" />
+        <Node name="rollet_conveyor_2m5CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="two_axis_grab_clp" type="T_BOOL" access="ReadWrite" />
+        <Node name="two_axis_pick_x_clp" type="T_BOOL" access="ReadWrite" />
+        <Node name="two_axis_pick_z_clp" type="T_BOOL" access="ReadWrite" />
       </Node>
       <Node name="EstacaoTampa">
         <Node name="Conveyor2m3CLP" type="T_BOOL" access="ReadWrite" />
@@ -54,6 +54,9 @@
         <Node name="ArmSorterCLP" type="T_BOOL" access="ReadWrite" />
         <Node name="Conveyor4m1CLP" type="T_BOOL" access="ReadWrite" />
         <Node name="Conveyor6m3CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="Emmiter3CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="SensorDifuso6CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="SensorDifuso7CLP" type="T_BOOL" access="ReadWrite" />
         <Node name="VisionSensor3CLP" type="T_BOOL" access="ReadWrite" />
       </Node>
       <Node name="LinhaFabricacao">
