@@ -1,0 +1,7 @@
+@ARQUIVO=dbq=<.>dados\;Uid=sa;Pwd=;Tabela=TESTE<ddmmyy>.LBX;Provider=LBANCO;Tipo=Geral|Time	3 - Data/Hora		77	hh:nn:ss		Time
+GROUPNAME	1 - Texto	32				Group name
+SENSOR	0 - Número					
+ESTEIRA	0 - Número					
+TAG1	0 - Número					
+TAG2	0 - Número					
+TAG3	0 - Número					

@@ -1,0 +1,194 @@
+<HTML>
+<head>
+<script type="text/javascript" src="displaytext.js"></script>
+<script type="text/javascript" src="bar1.js"></script>
+<meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<style type="text/css">
+canvas
+{ 
+ border-radius:17px;
+}
+div
+{ 
+  text-align: right;
+ font-family:Arial;
+ border-radius:7px;
+ background-color: #000000;
+ color: #FFFFFF;
+ padding:5px 5px;
+ width: 100px;
+}
+td
+{
+ white-space: nowrap;
+ font-family:Arial;
+ font-size: 12.0pt;
+ cursor:default;
+}
+form
+{
+  font-family:Arial;
+  font-size: 9.0pt;
+}
+p
+{
+  font-family:Arial;
+  font-size: 9.0pt;
+}
+select
+{
+  font-size: 9.0pt;
+}
+input
+{
+  font-size: 18px;
+  background-color: #FBFBFB;
+  border-style:solid;
+  border-width:1px;
+  border-color:#CCCCCC;
+  padding:1px 1px;
+  height: 28px;
+}
+input[type="text"]
+{
+  text-align: right;
+  font-size: 18px;
+  background-color: #FBFBFB;
+  border-style:solid;
+  border-width:1px;
+  border-color:#CCCCCC;
+  padding:3px 7px;
+}
+input[type="submit"]
+{
+  text-align: center;
+  font-size: 18px;
+  background-color: #EEEEEE;
+  border-style:solid;
+  border-width:1px;
+  border-color:#CCCCCC;
+  padding:3px 7px;
+}
+textarea
+{
+  font-size: 9.0pt;
+}
+
+</style>
+<title>Report SCADA</title></head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0">
+ <p>
+ <center>
+      
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+		 
+        <td bgcolor="#000099" width="15">
+		 
+		 </td>
+          <td>
+            
+          <p><font size="7"> Chart and history <font color="#000000"></font></font></p>
+          </td>
+        </tr>
+        <tr>
+		<td bgcolor="#000099" width="15">
+		 
+		 </td>
+          
+        <td bgcolor="#000099">&nbsp;</td>
+        </tr>
+      </table>
+      
+    <p>
+<table><tr><td>
+
+</td><td>
+
+</td></tr></table>
+
+</center></p><center><center>
+<p></p>
+
+<p></p>
+<p>
+<table>
+<tr>
+           <td>
+           <form action=relatorio.pdfgrafico>
+           <input type="hidden" name="NOME" value="">
+           <input type="hidden" name="TAG" value="">
+           <center>Data: <select id="date" name="DATE">
+</select></center>
+<script type="text/javascript">
+var select = document.getElementById("date"); 
+var data = new Date();
+var e;
+for(var i = 0; i < 30; i++) {
+    var mes="";
+    var dia="";
+    mes = (data.getMonth()+1).toString();
+    if (mes.length==1) {
+     mes = "0"+mes;
+    }
+    var dia="";
+     dia = data.getDate().toString();
+    if (dia.length==1) {
+     dia = "0"+dia;
+    }
+    var opt = dia+"/"+mes+"/"+data.getFullYear().toString();
+    var el = document.createElement("option");
+    el.textContent = opt;
+    el.value = opt;
+    select.appendChild(el);
+    e = data.getTime() - 1000*60*60*24*1;
+    data.setTime(e);
+}
+</script>
+
+<br>
+           <center>Sampling: <select name="AMOSTRAGEM"">
+              <option value="1h">1h</option>
+              <option value="30m">30m</option>
+              <option value="15m">15m</option>
+          </select>
+           </center><br>
+           
+           <center><input type=submit name=REL value=" Show "></center>
+           </form>
+      <center><input type="button" name=PRINCIPAL value=" Back " onclick="window.history.back()"></center>
+
+           </td> 
+
+           </td>
+           <td width=57>
+
+           <td>
+           </td> 
+</tr> 
+</table>
+
+
+</p>
+
+<p>
+</p>
+<form method=get action="acompanhamentogeral.lhtml">
+ <p>
+ <center>
+ <table border="0" cellspacing="0" cellpadding="3">
+ </table>
+ </center>
+ <p></p>
+ </center></center></form><center><center>
+ <center>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td bgcolor="#000099">&nbsp;</td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+ </center>
+</center></center></body>
+
+</HTML>

@@ -55,6 +55,8 @@
         <Node name="Emmiter3CLP" type="T_BOOL" access="ReadWrite" />
         <Node name="SensorDifuso6CLP" type="T_BOOL" access="ReadWrite" />
         <Node name="SensorDifuso7CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="StopBlade5" type="T_BOOL" access="ReadWrite" />
+        <Node name="StopBlade6" type="T_BOOL" access="ReadWrite" />
         <Node name="VisionSensor3CLP" type="T_BOOL" access="ReadWrite" />
       </Node>
       <Node name="LinhaFabricacao">

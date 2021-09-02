@@ -1,0 +1,224 @@
+
+<!-- Exemplo página de acompanhamento genérica --> 
+
+<!--  
+
+   Para acessar o tag utilize o texto: <%!TAG(nomedotag.propriedade)%>
+   Para formatar o número de casas de um tag número: <%!TAG(nomedotag#númerodecasas)%>
+    
+   Exemplos:
+
+   <%!TAG(nomedotag.titulo)%>:
+   <input type=text style="text-align: right" name=TAG.nomedotag value = <%!TAG(nomedotag)%> size=7>
+   <input type=submit name=SET.nomedotag value=Setar>
+
+
+
+   <div id="calculo1" width="100"></div>
+   <script language="JavaScript">document.getElementById('calculo1').innerHTML=Math.floor(<%!TAG(Grupo1_Tag1)%>*100/<%!TAG(Grupo1_Tag7)%>)/100;</script>
+
+--> 
+
+<HTML>
+<head>
+<script language="JavaScript">
+<!--
+function beginrefresh() {
+setTimeout('window.location.reload()',10000)
+}
+window.onload=beginrefresh
+//-->
+</script>
+<meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<style>
+<!--table
+td
+{
+ white-space: nowrap;
+ font-family:Arial;
+ font-size: 12.0pt;
+ cursor:default;
+}
+form
+{
+  font-family:Arial;
+  font-size: 9.0pt;
+}
+p
+{
+  font-family:Arial;
+  font-size: 9.0pt;
+}
+select
+{
+  font-size: 9.0pt;
+}
+input
+{
+  font-size: 18px;
+  background-color: #FBFBFB;
+  border-style:solid;
+  border-width:1px;
+  border-color:#CCCCCC;
+  padding:1px 1px;
+  height: 28px;
+}
+input[type="text"]
+{
+  text-align: right;
+  font-size: 18px;
+  background-color: #FBFBFB;
+  border-style:solid;
+  border-width:1px;
+  border-color:#CCCCCC;
+  padding:3px 7px;
+}
+input[type="submit"]
+{
+  text-align: center;
+  font-size: 18px;
+  background-color: #EEEEEE;
+  border-style:solid;
+  border-width:1px;
+  border-color:#CCCCCC;
+  padding:3px 7px;
+}
+input[type="button"]
+{
+  text-align: center;
+  font-size: 18px;
+  background-color: #EEEEEE;
+  border-style:solid;
+  border-width:1px;
+  border-color:#CCCCCC;
+  padding:3px 7px;
+}
+textarea
+{
+  font-size: 9.0pt;
+}
+-->
+</style>
+<title>Acompanhamento supervis&oacute;rio</title></head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0">
+
+ <p>
+
+ <center>
+      
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+		 
+        <td bgcolor="#000099" width="15">
+		 
+		 </td>
+          <td>
+            
+          <p><font size="7"> <font color="#000000">LAquis <font size="4">via Internet</font></font></font></p>
+          </td>
+        </tr>
+        <tr>
+		<td bgcolor="#000099" width="15">
+		 
+		 </td>
+          
+        <td bgcolor="#000099">&nbsp;</td>
+        </tr>
+      </table>
+      
+    <p>
+ <form method=get action="acompanhamentogeral.lhtml">
+      <input type=submit name=REFRESH value=" Reler ">
+<font face="Arial, Helvetica, sans-serif" size=3>
+      <b>Hora da atualização: </b>
+      <%
+response.write(format(now,"dd/mm/yyyy hh:nn:ss"))
+%>
+</font>
+ </form>
+</center></p><center>
+   <input type=button value="Relatório geral" onclick="location.href='relatoriogeral.lhtml'">
+
+<center>
+</p>
+
+<form method=get action="acompanhamentogeral.lhtml">
+
+ <p>
+ <center>
+
+ <table border="0" cellspacing="0" cellpadding="3">
+<%
+numerodetags=planilha.tags
+s=""
+nome=""
+for i=1 to numerodetags
+ if planilha.filhos(i)=0 then
+  response.write("<tr><td><b>")
+  s=planilha.texto("titulo",i)
+  nome=planilha.texto("nome",i)
+  if s=="" then
+   s=nome
+  end if
+  if s=="" then
+   s="x"+CStr(i)
+  end if
+  response.write(s+":")
+  response.write("</b></td>")
+  response.write("<td align=right>")
+  if not(nome=="") then
+'   response.write("<input type=text")
+  response.write("<input type=text style="+chr(34)+"text-align: right; "+chr(34))
+'response.write("<input type=text style="+chr(34)+"text-align: right; font-size: 18px; background-color: #FBFBFB; border-style:solid; border-width:1px; border-color:#CCCCCC; padding:3px 7px;"+chr(34))
+   response.write(" name=TAG."+nome+" value="+chr(34)+planilha.texto("valor",i)+chr(34)+" size=12>")
+   response.write("<input type=button value=Relatório onclick="+chr(34)+"location.href='relatorioindividual.lhtml?TAG="+nome+"'"+chr(34)+"> ")
+
+   response.write(" <input type=submit name=SET."+nome+" value=Setar>")
+   response.write("<td>"+planilha.texto("unidade",i)+"</td>")
+   response.write("<td>"+planilha.texto("status",i)+"</td>")
+  else
+   response.write(planilha.texto("valor",i))
+  end if
+  response.write("</td></tr>")
+  response.write(chr(13)+chr(10))
+ else
+  response.write("<tr><td>")
+  response.write("</td></tr>")
+  response.write("<tr><td bgcolor="+chr(34)+"#888888"+chr(34)+">")
+  response.write("<font size=4 color="+chr(34)+"#FFFFFF"+chr(34)+">")
+  response.write("<b>")
+  response.write(planilha.texto("nome",i))
+  response.write("</b>")
+  response.write("</font>")
+  response.write("</td><td bgcolor="+chr(34)+"#888888"+chr(34)+"></td><td bgcolor="+chr(34)+"#888888"+chr(34)+"></td></tr>")
+  response.write(chr(13)+chr(10))
+  
+ end if
+next
+%>
+ </table>
+ </center>
+
+<p>
+<%
+
+s=""
+s=extractfilename(app.aplname)
+s="<a href="+chr(34)+"Instala"+changefileext(s,"")+"_autocliente.EXE"+chr(34)+">Clique aqui e instale o espelho cliente se tiver.</a>"
+
+response.write(s)
+
+%>
+
+ <p></p>
+ </center></center></form><center><center>
+ <center>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td bgcolor="#000099">&nbsp;</td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+ </center>
+</center></center></body>
+</HTML>

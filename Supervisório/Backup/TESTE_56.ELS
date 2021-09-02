@@ -1,0 +1,28 @@
+Sub Edit1.OnClick
+: Panel.edit1.Text: Panel.esteira pequena 2.Size
+End Sub
+Sub displaytext1.OnClick
+
+End Sub
+Sub Esteira Pequena 14.OnClick
+Panel.estacaotampa.Size =  panel.thisobject.Size
+
+End Sub
+Sub Esteira Pequena 3.OnClick
+Panel.esteirapequena14.size = 16
+End Sub
+Sub EstacaoTampa.OnClick
+
+End Sub
+Sub Lampada5.OnClick
+Panel.estacaotampa.Text =  panel.thisobject.Size 
+End Sub
+Sub Esteira Pequena 1.OnClick
+Panel.estacaotampa.Text =  Panel.ThisObject.Picture
+End Sub
+Sub Lampada6.OnClick
+Panel.estacaotampa.Text =  panel.thisobject.Size 
+End Sub
+Sub Lampada7.OnClick
+Panel.estacaotampa.Text =  panel.thisobject.Size 
+End Sub

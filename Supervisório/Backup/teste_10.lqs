@@ -1,0 +1,937 @@
+APLAquis20	5		270		270	[..]	Value	Set	Param 1		Status/Alarm	Database	0		Time	Recording	Inter. Param	Início	0§§0	Formula	§§Param 2	LI	LS	Alarme	AlarmeReconhecido	TempoAlarme	HoraAlarmeReconhecido	AlarmeTexto	HoraAlarme	UltimoAlarme	BancoAlarme	AlterouValor	LastValue	LastUpdate
+			9	Grupo									VAR	0	24h	1m	1m															0		
+			15	L									VAR	0	24h	1m	1m															0		
+1			17	Cor1									VAR	0	24h	1m	1m									1s						0		
+1			17	Cor3									VAR	0	24h	1m	1m									1s						0		
+1			17	Difuso2									VAR	0	24h	1m	1m									1s						0		
+1			17	Difuso1			0	0					OPC	0	24h	1m	1m				CoDeSys.OPC.DA->PLC_GW3.Application.LinhaFabricacao.VisionSensor1CLP					1s						0		
+1			18	Cor2									VAR	0	24h	1m	1m									1s						0		
+1			19	Uso1									VAR	0	24h	1m	1m									1s						0		
+1			20	Uso2									VAR	0	24h	1m	1m									1s						0		
+1			21	Uso3									VAR	0	24h	1m	1m									1s						0		
+1			24	Uso4									VAR	0	24h	1m	1m									1s						0		
+1			45	Uso5									VAR	0	24h	1m	1m									1s						0		
+1			46	Cor4									VAR	0	24h	1m	1m									1s						0		
+1			50	Usinagem1									VAR	0	24h	1m	1m									1s								
+1			51	Usinagem2									VAR	0	24h	1m	1m									1s								
+			22	E									VAR	0	24h	1m	1m															0		
+1			23	Esteira1			-1						OPC	0	24h	1m	1m				CoDeSys.OPC.DA->PLC_GW3.Application.LinhaFabricacao.Conveyor6m1CLP											0		
+1			1	Esteira2			-1		40x0000	1			OPC	0	24h	1m	1m				CoDeSys.OPC.DA->PLC_GW3.Application.LinhaFabricacao.ConveyorGate1CLP					1s						0		
+1			1	Esteira3			-1						OPC	0	24h	1m	1m				CoDeSys.OPC.DA->PLC_GW3.Application.LinhaFabricacao.Conveyor6m1CLP					1s						0		
+1			1	Esteira4			-1						OPC	0	24h	1m	1m				CoDeSys.OPC.DA->PLC_GW3.Application.LinhaSaidaUsinagem.EsteiraUsinada1CLP					1s						0		
+1			1	Esteira5			-1						OPC	0	24h	1m	1m				CoDeSys.OPC.DA->PLC_GW3.Application.LinhaSaidaUsinagem.Conveyor4m2CLP					1s						0		
+1			1	Esteira6			-1						OPC	0	24h	1m	1m				CoDeSys.OPC.DA->PLC_GW3.Application.LinhaSaidaUsinagem.Conveyor2m1CLP					1s						0		
+1			1	Esteira7			-1						OPC	0	24h	1m	1m				CoDeSys.OPC.DA->PLC_GW3.Application.EstacaoTampa.Conveyor2m3CLP					1s						0		
+1			1	Esteira8							Indefinido		OPC	0	24h	1m	1m				CoDeSys.OPC.DA->PLC_GW3.Application.LinhaEntradaTampa.Conveyor6m3CLP					1s						0		
+1			1	Esteira9							Indefinido		OPC	0	24h	1m	1m				CoDeSys.OPC.DA->PLC_GW3.Application.LinhaEntradaTampa.Conveyor4m1CLP					1s						0		
+1			1	Esteira10			-1						OPC	0	24h	1m	1m				CoDeSys.OPC.DA->PLC_GW3.Application.EstacaoPallet.belt_conveyor_3_clp					1s						0		
+			25	B									VAR	0	24h	1m	1m															0		
+1			26	Blade1			-1						OPC	0	24h	1m	1m				CoDeSys.OPC.DA->PLC_GW3.Application.LinhaFabricacao.StopBlade1CLP											0		
+1			32	Blade2			-1						OPC	0	24h	1m	1m				CoDeSys.OPC.DA->PLC_GW3.Application.LinhaFabricacao.StopBlade2CLP					1s						0		
+1			33	Blade3			0						OPC	0	24h	1m	1m				CoDeSys.OPC.DA->PLC_GW3.Application.LinhaSaidaUsinagem.StopBlade7CLP					1s						0		
+1			34	Blade4			-1						VAR	0	24h	1m	1m									1s						0		
+1			35	Blade5			-1						VAR	0	24h	1m	1m									1s						0		
+1			37	Blade7			-1						OPC	0	24h	1m	1m				CoDeSys.OPC.DA->PLC_GW3.Application.EstacaoTampa.StopBlade4CLP					1s						0		
+			27	P									VAR	0	24h	1m	1m															0		
+1			28	Pistao1			0						OPC	0	24h	1m	1m				CoDeSys.OPC.DA->PLC_GW3.Application.LinhaFabricacao.Pusher1CLP											0		
+1			38	Pistao2			0						OPC	0	24h	1m	1m				CoDeSys.OPC.DA->PLC_GW3.Application.LinhaFabricacao.Pusher2CLP					1s						0		
+1			39	Pistao3			0						OPC	0	24h	1m	1m				CoDeSys.OPC.DA->PLC_GW3.Application.LinhaEntradaTampa.ArmSorterCLP					1s						0		
+			38	R									VAR	0	24h	1m	1m															0		
+1			39	Rolo1			-1						OPC	0	24h	1m	1m				CoDeSys.OPC.DA->PLC_GW3.Application.EstacaoPallet.rollet_conveyor_2m5CLP											0		
+1			40	Rolo2			-1						OPC	0	24h	1m	1m				CoDeSys.OPC.DA->PLC_GW3.Application.Armazenamento.EntryConveyorCLP					1s						0		
+1			41	Empurrador			0						OPC	0	24h	1m	1m				CoDeSys.OPC.DA->PLC_GW3.Application.EstacaoPallet.chain_transfer_left_clp					1s						0		
+1			42	Load1			-1						OPC	0	24h	1m	1m				CoDeSys.OPC.DA->PLC_GW3.Application.Armazenamento.LoadCOnveyorCLP					1s						0		
+1			43	Load2			-1						VAR	0	24h	1m	1m									1s						0		
+1			44	Rolo3			-1						OPC	0	24h	1m	1m				CoDeSys.OPC.DA->PLC_GW3.Application.SaidaPecas.RollerConveyot2m2CLP					1s						0		
+			47	A									VAR	0	24h	1m	1m															0		
+1			48	Fork			0						OPC	0	24h	1m	1m				CoDeSys.OPC.DA->PLC_GW3.Application.Armazenamento.ForkLiftCLP											0		
+1			49	Seletor			0						OPC	0	24h	1m	1m				CoDeSys.OPC.DA->PLC_GW3.Application.SaidaPecas.TunableTurnCLP					1s						0		
+	Canal	Tempo	Hora	"Set"	Param2	Param1	Tipo	OBS
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+							Patamar	
+F    Xì  5 xüHLÇÜ  _IA ×]V:^>6c N]çJi¡7Xşc<5cŞGV|Ph¦7Œ^ASOd3vARa8SVWm?‘F–Ï\Ö[<—@EƒIKZB5NrL5N¿ÑI\X‡SĞ?b;B<^]òwU:ZNEaLa@IGGPW€Ç÷]SFDXB??9¡BP8Z?MrP9êO¾O[hDõJ@5VA3fU€_“VÒÆá59^TOı^J8ZMPa4ùGz;CTÖFIPCLPO47  NVF²ÜaTĞFZE94]=íQB¸WC<5ŸE<›uOÖOI_D¸B’`ÈUœí5;9ûDí9SqÆ<5|¬3Fy:Ñ\HOO4CA@K?4bĞEB;P8ÔKZbNr6LSa¢F_@7BTCA593K?QJJÄHBEa[Om6\]65O<<\^b:8E?\GVIZA_G½ZDLùmA:@¼]`±JFÀyIX>75[¢HaNWÆQDQFMbMbG;ôç`¯]CD{84WJ]G„9½ap¬7?Z|7c4?]Ê^LT?GYE;@RZôGCûCV;`ƒSs=<V;QR8ÖR¾F3Q^F[JILZF6Uƒ\c3HmR9^nÂ6T3×Y<TK]J8_JPRğ3VCBNR…^>4aïbzDV‹_Zc8FcRVNP89>b4ô?ŞUÙNB~·`¥¹C?XGw9AYC;3W±IcHJ]bLAN;EDMEB45YYPSL¾J>[c¡CZcÔ5G?7_@uA6EK<M;6E5C]LE:ÍZøF]¢7X;\šPC9DOESSMöO;p8F8]æPJSFC`^cZlJ^X3? u:’cVKºV6Ê`MC]:âÑnM?fa»Î¼†˜Käó7[PZ;tş\=>XXNîæ[a½T@bÊÚaGIpzb\YNaN¯5J9÷UE48÷bGTK•A”òM³JL>NU4HJN_¿W=G<R[€\<ObBÇ‰KHR;òTVC`OJŞ6;59ILCOS†ñF“[6DCD¸FKGV`T;`L_=â8I3cM_@œ\J4M:ªPbJGD\AÜAEqÄTHZ„üRW[EYür[G6J¦Q4–LN7G]OGMDDŞR8@54H3|5GRAÓ:4cWOJM9Tg5>‚]VL:®Zp[N>ØXLU\b9>5?[>LM33ZÒ:b6L‡¦9ss53_DìXXHL;[A>VG[ôL”WR•BLWJ]8ÈMMT9R4V<\R4Qb·3†@6]uJ<3T·ìaô_SMRªEXH••;BGF`DN@M6PVS>_ŸG[[`I_¿9^9=VWG:QèWE~DuHĞ?K8E€4^ş<M>öZ@?a5ß`\4:öòËT_çVDVk5[W3EG]Éõ43@9‡5\[9AYP¿ùZ_©T?‘ZB@U3>ók:»S9—@A7Ç<XP=9@4“AĞZ3[5Ú6?Jç5;DOBãJ_N[YR4ü;‚S6_Mc;45Q3ÜJLV©7aJ[T_M6q€A‰BJñVV8’Oš^W6ºKZ3_?QeS_GI8>4:iY®õDW>MW—úOFİ4Áİõ<399YIÖW?L<B£MN¥9W<HÎESå:Rm`I8FLYPIbYğ5Z×9W7I§[LB6ŸCCHUMj?_oRAö4?b5@âc5´KYJYGNYLYšMUGRS”^6M86ò÷IzH[ëIâa’\{]59‚F[LX`a8XB3R°Bc:_F`4fICZ¸a`TZKb]7J@<R83L\734™J=M9SˆI\Hí<_\·P|;^CLFJUn:5MU™böTb_WTFJaDZOPÖEzGh°a7º;~fOHÉëUCEE87DY9>RXæC_aLVíI9UX9šE7AMJ3\ĞNHÔL@À@_FF<?^J5LøRR>ù¯E@a4Aà457Ií^<¬FJÎG;4b6Òq[tˆRØZ>Ì=cEUIÔKXE»T9XcLY7U…dƒQGOFKU=[@E\FEH»cYULoXB[KU95U”?[8ıKR^BÈçKNCD}]˜PBb[E:K5nWKBØòD8JTáV3IŞyE44K`î‰ZêA_nLu65>O[c;UËR„F6W¢jJ`G°DMa;HNL‚SW9Z×ZM=VJ¬D5`EòVGTOU73M?W®N¢Û8M¢U<8a±4aEQMÚFZ34Â=8IV5M\Tg>;@:4>B^ƒÉLHÀJ39HcUXTB¥Eb]>§qÌ‘¿Œ6aKa5SôF<Q®\?_—8A5[9ŸKVK\6?SQ8PQ=S©ìå[M]HcCQJ7²>eG¹üVEcJEMÇ[GY<6FC›YF`İE…CCÖ`O=4}NJJFB—\[V:7cVPOM>“8DR^8M8\T65KVIX^=`>ab}LTTp4¿­aKR9ò[TZaY;F3?`ı_ONMÑóTh9yCZL7_È9ÅsBJ…l;9I3E°‰?7~\ùC3ù=µTS844c]`FQRX–‚<Y;aXDKQ]GcISW¹_rKOVG7ZDU>™E<G[E‘IYí9YÜUÁ`ƒ×LD>uJ3PckC:JE4JnDPSPZéA}›:ëG[;:UxH64NÿS—Ka_<54_7Q7JIIUMBÈYHM:Gæ6J=bU`¡ZFF H4:?6PO¤S»à`FHEb\?§SJZ¢Y`[7K‹£½KG\m4y;3`ÅKRBKJcZDNÔVYMP:6mWU>QI?WAYïç;IRaT65Wb3ka3^QBŸ45IAK>\\I9FÊNŒ=AJcK]:=Q7=VIHFEQuO5VSHR÷JW?W6FC[>;ÏI_6@cDzvTK?L­ZLf>¼_6ShÆ:O5N«ûMyA\_>JCéC‰57ãHVR36Ù`76Lav;8IƒÛ9ú7^J~SY»aß[MVI[BHÆ>E°]aĞ6XPF«@ìBN^D]ü6T5HH95m^âKbcJM]`7:U^c_Ñ<RP_IŠ6`CaMZYIN>ê`NM•_E3¯:IDDN\ÜR;TN@VbTq<IĞL›XBHpK´BKKaEb·QIYH`NG7>ÏHJZ4pP>4}X=ÜP4W[T]8;PIYùá_¥SÜC?6@WRC;oDL[R7LQ=ƒ?FW9=[LwQZJcëMG\¿?©aaL@8a3KH6A;áJ:M¼NSU™jIW6<ßZN~;F×Q9:QµcÜ;IW@S7Gä§66<`UwcÙš6>QEÍ5Z\L6QÇ5@P@\ï_6EBsKL—BM[Ğ=cE@Bô^N@BÆf7c9E;ê^;_GQ_ÔQPZ6_C<>?FPOOaßX÷¨…²F6ÕwàTEU<QàÁ¤ôG~ÀZL\>YAL]O[V:«òGÒ?dJzQT4=hF§=ØR=GaVÿQ9:;;›MKa6G=Zç3|:UEZ=bDÈRŒWóNMc]êäaNFÀAd4àì[VWb_>=hV¶Ê;OOÉb]7\:xÜ`S>GDL4œVpú«>8OZW­°>]9@QM3\GS64Pn^a]9ÿ”hƒ=IUoaM=:`I¦Zc9¦¢JIB:K=TP£F>D¨ŞoUKHgó_Z°pK‚35P¾Ta¨bP\”AclI5OJqJ4†Vå=Xù9c?H<8V«D»i¾L;O\[LbaVE8úWSTöKcPm¨_[aû8@[K?W;¥<Z4CUC8c:Q7MH;Hc;BGH·¥7C8ë:L@HF?ÚOVW`eO=Aª6hO:ZWRb@3¢W<©O?^ÎA4SfS[_b‹:<M=OñIyJGHQS=[`CBPWû]6]LV”R×Ì¤OUA¹·¯[8;F WãP8ì`7D:>?NB_G48;A:AbyIN\Eƒï56Z7\¤>ÛÕAc­NµG<½HoNEDy£N^V:S>Wb¹KH9EWN·YNT8IÄ@…Œ>3N]CM]±`E›NÀ¯;5÷K¹N>b?4·G7U9_NÒGK5DP]4ccaX^ZLM‹;Ú™OÇTO=‡Oş¶6cc¼ÈAH7Y\3úöÃ];SQk’M5tÙ9W?<V4QP4`aCSB:b›4SRY3W¡`bCP¿êE4aNEHH@6I6i^:=†O¶IW«;5Jj3TaME©`;JYÒ=ŸÜJV9[O:XT>ZPÉ@FRQ;_Zt=Ş5AK4îJÁB\Y79T?YûY8AZø[¯A9H8‘[Q¦á’H3`R™VZPHA6µBĞp>NLKVb¸8ÆÅHO£XÃW\OÿdRPPíĞM6cG?É_<Q_9~é<FşF?QO:½5SK<s3MAOM4ƒhõcG8<:¿PC´9G]cÜ3^DXK9qMšMN3r=Pó¨3Nk`EDzÈXDH`:@¯ZQ`7TV_6UHOl4b7¿^YGY?`X>7|ËTFÜ·T7t€RTONW:AjDN­NAä[ìø¨9Y6—M=_:‘Wÿ®OVRKÎ7×øR`¡èV?Qœ´]^\CNN6¡^S|°;„üöÜYæcù9NM·@w´N¶Ø??tYKRLObMGLU=bVEŸ`PY]ˆS€R¾…MSA=??AWGC¥>îúLá9`Y<YE^¼?AN9ÏöRXQpÚDPJ‹QKWG]¹FIEV×­HØ›HGK4Q\@JB¯AQĞ`FŸ˜UPSYÎA;U]„G]3µ«M:DŒDË7J9Crˆ<êHO^RJæbIZÄIYR;3V>SB@RH¿OcCÏa’ÁaHcE;b]_ M:Ÿ=G7N]VaÂÈ<M\_]ON=µu`@cFQ6:7{§E@U?CG_LqNTv`Rº=ÙYWWR^Gb•ç:_v79BRhk_MR4F[‘Ğ9]jGbN8¥G’5^³5T3X]9`]u;ub‰NR7i8U@b>7<Q‘4]©ßNZÖ^>aöO¤99N@US9=FLTT793GTK=ö«£4;=HPCü<CDğÄ??9D_D99D9õ½<TİFiguravrloE€ÖHù/	aéßV4»ãaÂD4ÅÄ(N¡aİsÖßÊñkğYqBGNLÖ  r  ù  ³    ä™Q›ÄvkH^îµ)³ü£¶ä3¸
+Ü	¹c©(’ XÍÚoç&BÒ¦²Nzoÿ Sš|şÄR¢Ærë$1ø£ÙÀŞõF%ãV:ÚÃà´ìz0ûÚ3î¿•Œ‹û|ÇúŸXì                 ÿÿ      
+   -P_Pistao2      Fórmula      0      Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      270 pistão esticado.jpg      Figura      525546      propdial      Pistao2      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   C   270 Pistão Recolhido.jpg
+270 Pistão Esticado.jpg
+
+
+
+
+
+
+
+
+"      FigurasFiguraÆ>k¦SÈñiU6²sç&dºÙŠ*İ:\ ¢ò” ÏŒ¢Ì‡Á‚ö>°TŸqBGNL  Z   X  }     @ìL¼ŠO\@ëQOEä£lf=ä3òyé±Üúl+/ú]a´ĞW³CöıXM5ôÿ O»Knò4…„zz ûGÈi‡ıÔ:Ç0õ<LúİLÙ¨ê¢™ö7ì’PK\1                 ÿÿ       
+   -P_Pistao3      Fórmula      0      Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      pistão esticado.jpg      Figura      525546      propdial      Pistao3      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   ;   Pistão Recolhido.jpg
+Pistão Esticado.jpg
+
+
+
+
+
+
+
+
+"      FigurasFiguras¤êË}SÆº™Ê<bıÃQ·j?b¶[QºÙ¼9Äi¨¯N ÕT®X§qBGNL0  ¾   ²  æ     ¹ßsÚ™£0*Jµ{ø¼Ü|™[2;´£¬™ƒ{,‰eµ7“­ä˜èsÊšPÇIÿ ÒQá¬¡Ìıšé, –'t3(„ö1uüt.«f°0ñ'Àşzïl)¢/                 ÿÿ         -E_Esteira7      Fórmula      0      Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      esteira pequena ativa.jpg      Figura      525546      propdial      Esteira7      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   @   Esteira Pequena.jpg
+Esteira Pequena Ativa.jpg
+
+
+
+
+
+
+
+
+"      FigurasFiguraİÆdˆJoua²p2ã=4›ÚÚm§á‰×°Éˆ¤Nü¥š8Õ4·èn½üqBGNL‡   ¾   õ   æ     aˆDu¡˜ç4CÉ²w¯Y:[¦y;4vê×­[O:èíâ¦°*2R2fÌğá²ÿ ]ñ±[³è€íÜR7vKZJ¹›ù‚èö}áT×Èğ5¬¤\]Æã	’{â,/K:/                 ÿÿ         -E_Esteira4      Fórmula      0      Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      esteira pequena ativa.jpg      Figura      525546      propdial      Esteira4      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   @   Esteira Pequena.jpg
+Esteira Pequena Ativa.jpg
+
+
+
+
+
+
+
+
+"      FigurasFigura\òÇêKcµÍãZ"©¸a§C¢®9AT¬ùNî¤±°\7_õã+eqBGNL›   r  ¾   ³    ç‚ØºjŞèYº*’éÃ§¯r±ô&%áú­)¾—/°¢ë8CB©¿©äO  ]Áÿ ZÕ¯ê$NËpà´q™P)ÖèI¤]nåêŒA'Ç;° +ÀáœDÑ/5úBÒTfkå                 ÿÿ      
+   -P_Pistao1      Fórmula      0      Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      270 pistão esticado.jpg      Figura      525546      propdial      Pistao1      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   C   270 Pistão Recolhido.jpg
+270 Pistão Esticado.jpg
+
+
+
+
+
+
+
+
+"      FigurasFiguraÒ]?šÕ77âÅ¤òtÑ>Ú±èêù­şàÍÛxÖ\,Ò!I²Ÿ„†ñ,òmqBGNLZ   ¸  Œ   ê    (ü8>‘à=¯bª5vÕ6,èc¸{`ÀdRÈMŞ0ƒ#å\]`«FB0ŠÚH{Íÿ ê<ÖœBKë-X=¼/³pÖ—/ÉyYV™õdFmvŠùV@V±"ˆ•—B¤çƒ!’ì¥                 ÿÿ ÿ        L_Cor1      Fórmula             Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      lâmpada verde.jpg      Figura      525546      propdial      Lampada1      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   @   Lâmpada.jpg
+Lâmpada Azul.jpg
+Lâmpada Verde.jpg
+
+
+
+
+
+
+
+"      FigurasFiguraé: }@Ô¼¿î‚[ü’Ç·èÍd‡*îŒ.Á‚$ëDŠ,¼H‚İÏqBGNLÂ  ¾   0  æ     ´áßî‹±ÇŠ¨ßVŒlÙ~Ñ·Ì!©—âµU¥ÉÚ¤4wëÈe0îµ³­†·ê4á»uÿ ‡ŸºsußºØ\ª¾2´kìg‹¿Ø¨üÃ·ÑR£ÈùŒÛ|€
+ £ŠCÍ'é½„                 ÿÿ         -E_Esteira6      Fórmula      0      Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      esteira pequena ativa.jpg      Figura      525546      propdial      Esteira6      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   @   Esteira Pequena.jpg
+Esteira Pequena Ativa.jpg
+
+
+
+
+
+
+
+
+"      FigurasFigura™L'ÏSÚs_5¸â"Èú{Â	gP’=¦ó§¯+\YFd!İkOíX‰ØVqBGNLõ   ¾   ©  æ     Š©åP¼½gVÁ¨¥ã¢Uî„AÚêz7êøR	0m6µRÑ[y„ÁA:³dÿ ¨ïuè¤sUê°Íc¥“d*ïd“"¬š|@àA×½‚/¦ô¯š¼˜„i@pw=#                 ÿÿ 
+        -E_Esteira5      Fórmula      0      Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      esteira grande ativa.jpg      Figura      525546      propdial      Esteira5      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   >   Esteira Grande.jpg
+Esteira Grande Ativa.jpg
+
+
+
+
+
+
+
+
+"      FigurasFiguraãöäÔg¾E¬Ñ%¢©Jşù¢`ôa^WÂş¿ 1slÚ­ït”qBGNLg  Z   Š  ª     ¼üøpÀ! [>Ëƒ!ìk“·ùÚßYë—(/s)rm”¯±Àğdó×PÔ”*·ÿ ÙmFÒÒÌO£jDvhšºö³wRX“ÓMhÇïŠ±±ş0,½È¿¥?ôB;3Y                 ÿÿ         -E_Esteira9      Fórmula             Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      270 esteira pequena ativa.jpg      Figura      525546      propdial      Esteira9      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   H   270 Esteira Pequena.jpg
+270 Esteira Pequena Ativa.jpg
+
+
+
+
+
+
+
+
+"      FigurasFiguraßïR,…Rm5€Wã(I-juÁl.„$¯		<PôÎ¯LÉÚÏ¼ÅVqBGNL?  
+   g  ª     ‚¾<ˆ°Be“N×,í?Q%%_lË^¤:/&SšşÆB9<Å^H^ş#qÑ`Gÿ ÎĞçw’°¸O]?åÎ¬p}¬ü/E÷	]'}#Ği†k$xå‚Ê¦sqš_%ü;                 ÿÿ         -E_Esteira8      Fórmula             Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      270 esteira grande ativa.jpg      Figura      525546      propdial      Esteira8      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   F   270 Esteira Grande.jpg
+270 Esteira Grande Ativa.jpg
+
+
+
+
+
+
+
+
+"      FigurasFiguraµ^Knwf'ï|.È?cvÑ³˜…R¯è¿ÚÇ"+Jîrºrr b·	}G(XqBGNL¡  x   ç  Ã     4—Ø›8ËuZl;_1 êKÑd‡Òßn´ÍãŠ-³Ç‚-
+ßø“¥BNaI¸3œ'ÿ Vƒç6/ßË—í©0«wæN™*M:€.`ï«Jb#ô–§âo¥²šÛ
+ª>Udğ                 ÿÿ ú     	   A_Seletor      Fórmula             Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      seletor direção direita.jpg      Figura      525546      propdial      Seletor      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   /   Seletor Direção Direita.jpg
+
+
+
+
+
+
+
+
+
+"      FigurasFigura­	/Ê­`jq^únN¨LesÎY 
+õDŞ
+ƒ›K€K2"`!IÖ¹³qBGNLÜ   h  J      ï'«¸ÓÜÈxz°ÈaVáÕPi]
+›ıY3é/s¨ÍébøĞ•UÃ³Y½’ôŠ^ÿ ÖZ´üº¿¼_ §•çBÍ6wéäf_—¬,H{oÅµÅsQT~3™!ßxä                 ÿÿ         -E_Esteira2      Fórmula      0      Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      esteira pequena ativa.jpg      Figura      525546      propdial      Esteira2      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   @   Esteira Pequena.jpg
+Esteira Pequena Ativa.jpg
+
+
+
+
+
+
+
+
+"      FigurasFiguraÙ6g¡(’ ?¹[ıèhÖš«úoâˆúpÒ¢¾wÌáK&ŒÌr¿;>qBGNLJ  h  ş      8ñÄºàEtÊ£%ŒÉwUşN£‹×;™›®y8_]8or/§;5ÔÚxMŒ+¤ÿ ¹Ş²q——ÈµÖÀ¹üÉInHĞN&î$¦1L–Y»s5L¿ß*¡ :3b£æã\                 ÿÿ 
+        -E_Esteira3      Fórmula      0      Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      esteira grande ativa.jpg      Figura      525546      propdial      Esteira3      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   >   Esteira Grande.jpg
+Esteira Grande Ativa.jpg
+
+
+
+
+
+
+
+
+"      FigurasFigura <jŠí7åš÷F°‚_Ñ4p?}^3>ÎSŒ•Á¦ÒNnĞàÃŸŒ®®qBGNL   h  Ã       -´ã•ì:\dXˆuÙı›¹õğÈ¬öàsö ŞQ[yjè¢yp•ÄL­Èóÿ #)CÂn7ş]ŒAAH³o©K>õ•ú1ÀG¢A]pM@—[~Ş.üçò\a»ªÆüs¦                 ÿÿ 
+        -E_Esteira1      Fórmula      0      Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      esteira grande ativa.jpg      Figura      525546      propdial      Esteira1      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   >   Esteira Grande.jpg
+Esteira Grande Ativa.jpg
+
+
+
+
+
+
+
+
+"      FigurasFigurac®7)™Hõh•)‰8méI®+)Ç(‰¡Ì*ñZş.‚aãÂ£ˆ³HÇ…WqBGNLŒ   ¸  ¾   ê    "Óprô(è?àŞ™a6Ç­^ğèà$ ½Í[‚ŸËyèÓÕFş&ŠMyNQSÃ°eÿ äJKTÕ”#BDhÆPEQ…çı¿úå&(•İ’Ck™¥æQOºKÑÅ„RjF
+yq9                 ÿÿ 
+     	   L_Difuso1      Fórmula             Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      lâmpada vermelha.jpg      Figura      525546      propdial      Difuso1      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   F   Lâmpada.jpg
+Lâmpada Amarela.jpg
+Lâmpada Vermelha.jpg
+
+
+
+
+
+
+
+"      FigurasFigurag‚âÇgñ¸ÍDİvï9EişWª}æİØG£“¥0x›ne|«º"qBGNLË  ¾   *  æ     /SºgcRñw”wzáŸ-|U†ŒÚ¥‚ BnjèñğØÊaÒ	{¯]ù÷.­D‹ÿ š¾üqå=’	‰á/L.JÕp8€bş¨üzĞÀµ®/š»,àI9¶æÀéåkğ†ã—                 ÿÿ         -E_Esteira10      Fórmula      0      Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      esteira pequena ativa.jpg      Figura      525546      propdial   	   Esteira10      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   @   Esteira Pequena.jpg
+Esteira Pequena Ativa.jpg
+
+
+
+
+
+
+
+
+"      FigurasFigura£Ğ÷šû½g.Š„b>NKÑ(˜±1ÈŠJ‰¢Öm‘Z\›5’ªP™qBGNLs   "  ¥   T    $üÓ5£ç¤‰O,}éàªé€³.?[Ğh+ˆcXøÚ¢eÕèîÎ¦*ø‡{T…¦`ÿ «ïí¼ú<9ª/.5»V9®œL^tÊ7¢«O]5Pj¨İúMí ©f^$óò½Æ                 ÿÿ Ô        L_Uso1      Fórmula             Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      lâmpada.jpg      Figura      525546      propdial      Uso1      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"      Lâmpada.jpg
+
+
+
+
+
+
+
+
+
+"      FigurasGenéricoKÕµiĞ$çRNÖõiÅß/ÍQê¶ğoíƒ¾Üx­5`aÚëqBGNLZ   ê  Œ       kÓVåÃ¿•Ó"‚iµKÌ{t^‡üLĞÓ|'¼ Øgê×«sĞIğ²RË’Lsu•ÿ sTĞ!qÂˆ‡lkuÛ"åíRâ7ÎôFåj‚Z¨K\C8ÌÈz/å£Ü§¶"Ñù                 ÿÿ [               Fórmula             Título      33      Atualização      100      FP      0      EPAG      LTexto      Objeto             Valor             "Set Point"	      0	      Alarme 1
+      0
+      Alarme 2      -2147483633      Cor do fundo      0      UltTempo      0      Cor da frente             Unidade             "Status"      0      Alarmes      0      Mostra Título      Text1      Nome      18      Itens      6358604      propdial             EVENT      1      Visibilidade      1      _VisibilidadeAnterior             linob      0      EX1      0      EY1      0      EX2      0      EY2      0   	   Desenha3D      0   	   Textura3D             emulti       Cor       Texto!      12!      Tamanho"      1"      Transparente#      1#      Alinhamento$      0$      Borda%      &H000000%      Cor da borda&      Arial&      Fonte'      0'      Bold(      0(      Itálico)      0)      Borda3D*      0*      Editar+      Digite o valor aqui:+      EditarTexto,      Entrada,      EditarTítulo-      0-      Pos. Título.      5.      Largura/      0/      Enviar SetPoint0       0      Comando1       1      FormatoGenéricol»T#OnIí°eFà{_¯Æ¸!&…|ŒEØ©lë“;éªPĞUxÎd‚ŞqBGNLŒ   ê  ¾       xüçÙcPuäÚUBïÌâH8ƒëŸô	„3äÁÇh×ÏO‡şè–h6œ»iV<?,ÿ iŸ½šü–¼…†i½ş*FºıŒ-Ïä1»»©ïO`ÓO¦½IÎ¼?èJ÷äj                 ÿÿ ^               Fórmula             Título      33      Atualização      100      FP      0      EPAG      LTexto      Objeto             Valor             "Set Point"	      0	      Alarme 1
+      0
+      Alarme 2      -2147483633      Cor do fundo      0      UltTempo      0      Cor da frente             Unidade             "Status"      0      Alarmes      0      Mostra Título      Text2      Nome      18      Itens      6358604      propdial             EVENT      1      Visibilidade      1      _VisibilidadeAnterior             linob      0      EX1      0      EY1      0      EX2      0      EY2      0   	   Desenha3D      0   	   Textura3D             emulti       Difuso       Texto!      12!      Tamanho"      1"      Transparente#      1#      Alinhamento$      0$      Borda%      &H000000%      Cor da borda&      Arial&      Fonte'      0'      Bold(      0(      Itálico)      0)      Borda3D*      0*      Editar+      Digite o valor aqui:+      EditarTexto,      Entrada,      EditarTítulo-      0-      Pos. Título.      5.      Largura/      0/      Enviar SetPoint0       0      Comando1       1      FormatoGenéricoJ^ÃÛæ<»ÙÀëÆì*öğÑL‘.ĞHço–#he$A¶f—)æº¥ûqBGNL•  ê  Ç      YÃ*7ÆßŞßœS7ºÂ£—Mm†±‡V©ÙŸÄİbNÔœt¡û9ÛÖ÷aWgæ_¿ş24ºÿ ®[F!Ê«ÀByÈqò¢°¸vÛß7êóØï¢Øº¿.1 ^ÁY¥!§ÊB'j                 ÿÿ [               Fórmula             Título      33      Atualização      100      FP      0      EPAG      LTexto      Objeto             Valor             "Set Point"	      0	      Alarme 1
+      0
+      Alarme 2      -2147483633      Cor do fundo      0      UltTempo      0      Cor da frente             Unidade             "Status"      0      Alarmes      0      Mostra Título      Text3      Nome      18      Itens      6358604      propdial             EVENT      1      Visibilidade      1      _VisibilidadeAnterior             linob      0      EX1      0      EY1      0      EX2      0      EY2      0   	   Desenha3D      0   	   Textura3D             emulti       Cor       Texto!      12!      Tamanho"      1"      Transparente#      1#      Alinhamento$      0$      Borda%      &H000000%      Cor da borda&      Arial&      Fonte'      0'      Bold(      0(      Itálico)      0)      Borda3D*      0*      Editar+      Digite o valor aqui:+      EditarTexto,      Entrada,      EditarTítulo-      0-      Pos. Título.      5.      Largura/      0/      Enviar SetPoint0       0      Comando1       1      FormatoGenéricoSúÀtáWEv¢°-Ş<ÔO¥x¿­Ôv¯8´-ŞØ†\C‚Ào<„ËÛ€qBGNLÇ  ê  ù      6Y¡ßÅo”—+§€Ò*ô`y[Y"gmKI‡I±î!…¤]¨+ 5dßz¾×Ç|Xmÿ ÓFbóUtÜÖ_÷×XÜÎÂ{có’À}ŒÉŞ¢îÑNö(…8ÔşéP¥ª                 ÿÿ ^               Fórmula             Título      33      Atualização      100      FP      0      EPAG      LTexto      Objeto             Valor             "Set Point"	      0	      Alarme 1
+      0
+      Alarme 2      -2147483633      Cor do fundo      0      UltTempo      0      Cor da frente             Unidade             "Status"      0      Alarmes      0      Mostra Título      Text4      Nome      18      Itens      6358604      propdial             EVENT      1      Visibilidade      1      _VisibilidadeAnterior             linob      0      EX1      0      EY1      0      EX2      0      EY2      0   	   Desenha3D      0   	   Textura3D             emulti       Difuso       Texto!      12!      Tamanho"      1"      Transparente#      1#      Alinhamento$      0$      Borda%      &H000000%      Cor da borda&      Arial&      Fonte'      0'      Bold(      0(      Itálico)      0)      Borda3D*      0*      Editar+      Digite o valor aqui:+      EditarTexto,      Entrada,      EditarTítulo-      0-      Pos. Título.      5.      Largura/      0/      Enviar SetPoint0       0      Comando1       1      FormatoFigura[ŠèĞ‘
+7[ œWÇ‚4åŸ§¬w&?[Í‰·Â(" a3ÉÑ¶éAoÙXqBGNLÃ   h  Ü       ß¿„`’2Çö
+¹¢B^I*:‰3¿™~Ğ†’—dø±RJôM ß;6ñiZt}µ_ÿ UÈöö_ˆ¾æ˜CˆÚ~tòé;ZŠhã‚fÏ¦ê1Â¤J%¢hèMF´”                 ÿÿ ï     	   -B_Blade1      Fórmula      0      Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      blade erguida.jpg      Figura      525546      propdial      Blade1      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   .   Blade.jpg
+Blade Erguida.jpg
+
+
+
+
+
+
+
+
+"      FigurasFigura_‚ÂÖ—^ØXÒæŒÇ|GdŠû@gˆzkVIû›‡p£2«Ş9üœ—‘é®qBGNL®  "  à  T    wøR¿¬XµàN®»ıÕ4õ}ßÆŠENf>ƒ—öûLú“›d›`ã™—ğ DØ-:‘ÄDÿ ‡îc±ut.E…^2‚H»O("bX6\œOËOàÔôÓàë\ö<ykÍ[5Â÷À¼j                 ÿÿ Ô        L_Uso2      Fórmula             Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      lâmpada.jpg      Figura      525546      propdial      Uso2      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"      Lâmpada.jpg
+
+
+
+
+
+
+
+
+
+"      FigurasFigura«Y¦l}“œS/O2«yºĞü4ì;øp\@ı/±ñƒk —!oÃ)•¿<qBGNL]  ë         |—c‹ƒ~Qm°İÒé{‚ÚçĞ²de8öoX:J€Yv_ş@zåLy§pÚóÿ Ò¥_[gs;nN.şAÁªÚ%Ü
+W‘“¹ûÖ8u–bÃ\u
+ÓËë6†¸                 ÿÿ Ô        L_Uso3      Fórmula             Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      lâmpada.jpg      Figura      525546      propdial      Uso3      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"      Lâmpada.jpg
+
+
+
+
+
+
+
+
+
+"      FigurasFigura¨ññB§‰~÷Zéq†ëNúˆ1åú9'o	í
+¹³VvaAŸc
+qBGNLş  h        ~Ë_íl×ùéJ ‚v[w 6Îc)7à[+ÉìS¾P¯¬Š…¦Õ‰"kkXÃ>Púÿ gOY+üä¢…Ôô@üĞ5àe}Ğ¿3²î´=¬E§ëè¦bóÀñ+3=°œDşIR                 ÿÿ ï     	   -B_Blade2      Fórmula      0      Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      blade erguida.jpg      Figura      525546      propdial      Blade2      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   .   Blade.jpg
+Blade Erguida.jpg
+
+
+
+
+
+
+
+
+"      FigurasFigura[Ox‚í¨7¯µ Ÿ—°á Ù+‡­G1ÜÅ›{q§¡z™„îÛfœ	RrbqBGNL©  ¾   Â  æ     	i†ÛrmşíÎ%ØnäÈS³›x=-³ÉRÅT=İÉrĞ¼G‘õÊ6›¥2n„;ÿ ;İøÜ,ˆzÏ…2Sb&ºN½^ÒÕÃÇ¸¶Ñù–ƒiÚºŒO½’HÓøëjH¤T                 ÿÿ ï     	   -B_Blade3      Fórmula      0      Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      blade erguida.jpg      Figura      525546      propdial      Blade3      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   .   Blade.jpg
+Blade Erguida.jpg
+
+
+
+
+
+
+
+
+"      FigurasFiguraáiDUZ÷iAm(Öjûô6r™\AÃ×”¸jH ¨9oazq1=ÒàqBGNL?  ª   b  ¾     ;‰ÂŸAı:ñàµtì6aW—XMr’iDãkeâRR#,²Y*`$5Õ[-“ÊòŠÿ ±Ñ{LáqTÊŒ+-i&¡”¼µ×iùoÃ³Åş±ò`1¬M¶L¯¥ÊÍR›¢‘¢E                 ÿÿ û     	   -B_Blade4      Fórmula      0      Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      270 blade erguida.jpg      Figura      525546      propdial      Blade4      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   6   270 Blade.jpg
+270 Blade Erguida.jpg
+
+
+
+
+
+
+
+
+"      FigurasFiguraÄ	RJ)*’qz&f§ˆ“Ÿ}]}DMî¸!:ß—¾˜Ñgæ„X¥–‹¶qBGNLg  ª   Š  ¾     ‚ØcÏÜş.YK.às‘(ĞôãW°©ô ¡¤Cî'¢òÏ)ÒÚO6ëRG¼æy½ÿ è
+57qm ³a·'}Ü!¨@ÜV ïá$0ÊÙ¡â‡	zeäÓ[Ëhİ§ŠóQj¨                 ÿÿ û     	   -B_Blade5      Fórmula      0      Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      270 blade erguida.jpg      Figura      525546      propdial      Blade5      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   6   270 Blade.jpg
+270 Blade Erguida.jpg
+
+
+
+
+
+
+
+
+"      FigurasFiguraª™IÇ[1FåÇ DÌyJ4%Òüh‰£aİ8WEó‹ Jòİ"‘DËt ìÛqBGNL²  ¾   Ë  æ     ğÄ|_ƒ6K–ğ9‰ÌÅ¡:0Kjª1¡°.<ÈDdmï˜Æ}ó˜È'‰ÿ ­Wy„{‹Ìv¦ùen]˜:Ø”#wĞ‹T¼å#ÇÓ$³Õäk\€ø#šDRß	/±                 ÿÿ ï     	   -B_Blade7      Fórmula      0      Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      blade erguida.jpg      Figura      525546      propdial      Blade7      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   .   Blade.jpg
+Blade Erguida.jpg
+
+
+
+
+
+
+
+
+"      FigurasGenéricoši¡­,ÀL(Ôä¸@à‚l‰]ŠÈÉ‘yî”«ªŠàúœà¤? ÎqBGNLå       -     ¬S‘SeÏ, Úıó°³5mÌê‘c¨‘ ã×lÇŸ†œT]·‹Ámu=ëLâ—Áÿ &ğ!õéç0©à(yl4´•Tãëæ‡X­º2Ğ`—SÂ/>2lâuWàÒM?×ÆÁ                 ÿÿ [               Fórmula             Título      33      Atualização      100      FP      0      EPAG      LTexto      Objeto             Valor             "Set Point"	      0	      Alarme 1
+      0
+      Alarme 2      -2147483633      Cor do fundo      0      UltTempo      0      Cor da frente             Unidade             "Status"      0      Alarmes      0      Mostra Título      Text5      Nome      18      Itens      6358604      propdial             EVENT      1      Visibilidade      1      _VisibilidadeAnterior             linob      0      EX1      0      EY1      0      EX2      0      EY2      0   	   Desenha3D      0   	   Textura3D             emulti       Cor       Texto!      12!      Tamanho"      1"      Transparente#      1#      Alinhamento$      0$      Borda%      &H000000%      Cor da borda&      Arial&      Fonte'      0'      Bold(      0(      Itálico)      0)      Borda3D*      0*      Editar+      Digite o valor aqui:+      EditarTexto,      Entrada,      EditarTítulo-      0-      Pos. Título.      5.      Largura/      0/      Enviar SetPoint0       0      Comando1       1      FormatoGenéricoÕ¬aÃˆ×ÒÏÏÒÕ9qà}Æîgb:IşÄ1|díãâ‹`Ø»éqBGNLå  Œ     ´     ~‡8û3Ã”ûÑÒû>oaj-ÅO–tÔ{|ûép¨2ÛY"z‰u±nÌ¨e7ÿ ÅaŞóÏ]Ú4ƒ ½E‹±4[u„¶™„îII¯éú–Š^¨_K»Å¤*ÊQj0^                 ÿÿ ]               Fórmula             Título      33      Atualização      100      FP      0      EPAG      LTexto      Objeto             Valor             "Set Point"	      0	      Alarme 1
+      0
+      Alarme 2      -2147483633      Cor do fundo      0      UltTempo      0      Cor da frente             Unidade             "Status"      0      Alarmes      0      Mostra Título      Text6      Nome      18      Itens      6358604      propdial             EVENT      1      Visibilidade      1      _VisibilidadeAnterior             linob      0      EX1      0      EY1      0      EX2      0      EY2      0   	   Desenha3D      0   	   Textura3D             emulti       Fluxo       Texto!      12!      Tamanho"      1"      Transparente#      1#      Alinhamento$      0$      Borda%      &H000000%      Cor da borda&      Arial&      Fonte'      0'      Bold(      0(      Itálico)      0)      Borda3D*      0*      Editar+      Digite o valor aqui:+      EditarTexto,      Entrada,      EditarTítulo-      0-      Pos. Título.      5.      Largura/      0/      Enviar SetPoint0       0      Comando1       1      FormatoGenérico|Ímß º&£ãPÈ§âÁ¬ºš¶ç#âjK=[\Á²w0…X~¾xÌV93qBGNL   
+     <     ´hPÉdH…?£a·N¯„¦Øæ×#×EŞv\OM;¦ä:‰ ı‘k|0ïMÿ …„uör°|êF½³Ü–è³~]6§V»áòËBŞæìÜ¶÷Çş('%¶E×dµO„8                ÿÿ e               Fórmula             Título      33      Atualização      100      FP      0      EPAG      LTexto      Objeto             Valor             "Set Point"	      0	      Alarme 1
+      0
+      Alarme 2      -2147483633      Cor do fundo      0      UltTempo      0      Cor da frente             Unidade             "Status"      0      Alarmes      0      Mostra Título   	   USINAGEM1      Nome      18      Itens      6358604      propdial             EVENT      1      Visibilidade      1      _VisibilidadeAnterior             linob      0      EX1      0      EY1      0      EX2      0      EY2      0   	   Desenha3D      0   	   Textura3D             emulti    
+   USINAGEM 1       Texto!      0!      Tamanho"      1"      Transparente#      0#      Alinhamento$      0$      Borda%      &H000000%      Cor da borda&      Arial&      Fonte'      0'      Bold(      0(      Itálico)      0)      Borda3D*      0*      Editar+      Digite o valor aqui:+      EditarTexto,      Entrada,      EditarTítulo-      0-      Pos. Título.      5.      Largura/      0/      Enviar SetPoint0       0      Comando1       1      FormatoGenéricoDRÒkøÇé°gôkßlì=Ú ¶ÀéóËÄÖ”%Â¼”»_Hş)qBGNLZ   õ   ¹       díœ^¬^;Q¨@ÃœuĞT%I™O;=Y«uYMo8z½¤ŞqCŒÇĞÅ²Ä×ÿ ßåKÏâÌçš“şyÂågÖ5ßô#3õŸ¸i=EÁ¬uÎhë©@úŠ°üÁ©@                 ÿÿ ®        Tag1      Fórmula             Título      33      Atualização      100      FP      0      EPAG      Button      Objeto             Valor             "Set Point"	      0	      Alarme 1
+      0
+      Alarme 2      16777215      Cor do fundo      44437,9658251042      UltTempo      -2147483633      Cor da frente             Unidade             "Status"      0      Alarmes      0      Mostra Título      button1      Nome      39      Itens      6358604      propdial             EVENT      1      Visibilidade      1      _VisibilidadeAnterior             linob      0      EX1      0      EY1      0      EX2      0      EY2      0   	   Desenha3D      0   	   Textura3D             emulti    
+   Usinagem 1       Texto!       !      Comando"      4"      Margem#      10#      Letra$   
+   &H02333333$      Cor do texto%      1%      Bold&      1&      Fundo'   	   Usinagem1'      Pagina(       (   	   Relatorio)      1)      Alto*      0*      Baixo+      0+      Pulso,       ,      PaginaPopup-      0-   
+   AlterarTag.      0.      HotSpot/      0/      TextoIgualTitulo0       0      Figura1       1      PaginaPlanta3D2      02      DependeDeSenha3       3   
+   Privilégio4      14      Estilo5      15      MensagemAguardar6       6      PopupLargura7       7      PopupAltura8       8      PopupX9       9      PopupY:      1:      PopupMostrarTítulo;       ;      TagSet<       <      TagReset=      &HEEEEEE=   
+   CorEstado0>      &HC7E7D0>   
+   CorEstado1?      &H4F71FB?   
+   CorEstado2@       @      Estado0A       A      Estado1B       B      Estado2C       C      Figura0D       D      Figura1E       E      Figura2F       F      item1Genéricoˆ8Ÿ!·õv{ms^ïÂŒËÒZ>ìùX?Ì{G€µıK—]î×øÀ¸å·qBGNL•  õ   ô      äğ)lwÓâ“ŞF”îÉd„õCÛôq³VÚeJ—R`V!ôdíQ:5ÙuVF#hÿ •Òq¾S¯à„á¶ÂXS®ÖıfŞ×Ÿ¹‡XJ}ÓPn€<±@_k6kZ(¼ş¼m0                 ÿÿ ¦        Tag1      Fórmula             Título      33      Atualização      100      FP      0      EPAG      Button      Objeto             Valor             "Set Point"	      0	      Alarme 1
+      0
+      Alarme 2      16777215      Cor do fundo      44437,9658251273      UltTempo      -2147483633      Cor da frente             Unidade             "Status"      0      Alarmes      0      Mostra Título      button2      Nome      39      Itens      6358604      propdial             EVENT      1      Visibilidade      1      _VisibilidadeAnterior             linob      0      EX1      0      EY1      0      EX2      0      EY2      0   	   Desenha3D      0   	   Textura3D             emulti    
+   Usinagem 2       Texto!       !      Comando"      4"      Margem#      10#      Letra$   
+   &H02333333$      Cor do texto%      1%      Bold&      1&      Fundo'      2'      Pagina(       (   	   Relatorio)      1)      Alto*      0*      Baixo+      0+      Pulso,       ,      PaginaPopup-      0-   
+   AlterarTag.      0.      HotSpot/      0/      TextoIgualTitulo0       0      Figura1       1      PaginaPlanta3D2      02      DependeDeSenha3       3   
+   Privilégio4      14      Estilo5      15      MensagemAguardar6       6      PopupLargura7       7      PopupAltura8       8      PopupX9       9      PopupY:      1:      PopupMostrarTítulo;       ;      TagSet<       <      TagReset=      &HEEEEEE=   
+   CorEstado0>      &HC7E7D0>   
+   CorEstado1?      &H4F71FB?   
+   CorEstado2@       @      Estado0A       A      Estado1B       B      Estado2C       C      Figura0D       D      Figura1E       E      Figura2F       F      item1Genérico“ÑyÆÇ ÌÙ„gµ­=Ë«¦4pµ¿oëæ,by š*M0I4«qBGNLD  "  £  E    8yPİôÖ*³|Ú£6¸@zêU¦9O.tAû#ô˜ÒÄ®}â†xIâKd~ÿ ¸D	x3ÌkA}3Ó{*‚$×1æ5Ûrm,%mÂåy‹ö.òöÄà›3û M'>                 ÿÿ ¤        Tag1      Fórmula             Título      33      Atualização      100      FP      0      EPAG      Button      Objeto             Valor             "Set Point"	      0	      Alarme 1
+      0
+      Alarme 2      16777215      Cor do fundo      44437,9658251505      UltTempo      -2147483633      Cor da frente             Unidade             "Status"      0      Alarmes      0      Mostra Título      button3      Nome      39      Itens      6358604      propdial             EVENT      1      Visibilidade      1      _VisibilidadeAnterior             linob      0      EX1      0      EY1      0      EX2      0      EY2      0   	   Desenha3D      0   	   Textura3D             emulti       Montagem       Texto!       !      Comando"      4"      Margem#      10#      Letra$   
+   &H02333333$      Cor do texto%      1%      Bold&      1&      Fundo'      3'      Pagina(       (   	   Relatorio)      1)      Alto*      0*      Baixo+      0+      Pulso,       ,      PaginaPopup-      0-   
+   AlterarTag.      0.      HotSpot/      0/      TextoIgualTitulo0       0      Figura1       1      PaginaPlanta3D2      02      DependeDeSenha3       3   
+   Privilégio4      14      Estilo5      15      MensagemAguardar6       6      PopupLargura7       7      PopupAltura8       8      PopupX9       9      PopupY:      1:      PopupMostrarTítulo;       ;      TagSet<       <      TagReset=      &HEEEEEE=   
+   CorEstado0>      &HC7E7D0>   
+   CorEstado1?      &H4F71FB?   
+   CorEstado2@       @      Estado0A       A      Estado1B       B      Estado2C       C      Figura0D       D      Figura1E       E      Figura2F       F      item1Genérico9  µ|‘­"Û/ªı]w,X ^'åMş&(­x†»µ_¨~KqBGNL,  
+   Ÿ  <     •­`ßJéî¯«7î·-Ò‡$(3¾F{Õc6‡Ø¶°àL éF/ªäÊC*x)ø¢ÿ à^ôéÑ¾üòô¥¤Ty×Øö<59a—QR>zÀ½{1“Ä…sp<¢€œä÷©,B<                ÿÿ ¥        Tag1      Fórmula             Título      33      Atualização      100      FP      0      EPAG      Button      Objeto             Valor             "Set Point"	      0	      Alarme 1
+      0
+      Alarme 2      16777215      Cor do fundo      44437,9657302778      UltTempo      -2147483633      Cor da frente             Unidade             "Status"      0      Alarmes      0      Mostra Título      button4      Nome      39      Itens      6358604      propdial             EVENT      1      Visibilidade      1      _VisibilidadeAnterior             linob      0      EX1      0      EY1      0      EX2      0      EY2      0   	   Desenha3D      0   	   Textura3D             emulti       Geral       Texto!       !      Comando"      4"      Margem#      12#      Letra$   
+   &H02333333$      Cor do texto%      1%      Bold&      1&      Fundo'      Geral'      Pagina(       (   	   Relatorio)      1)      Alto*      0*      Baixo+      0+      Pulso,       ,      PaginaPopup-      0-   
+   AlterarTag.      0.      HotSpot/      0/      TextoIgualTitulo0       0      Figura1       1      PaginaPlanta3D2      02      DependeDeSenha3       3   
+   Privilégio4      14      Estilo5      15      MensagemAguardar6       6      PopupLargura7       7      PopupAltura8       8      PopupX9       9      PopupY:      1:      PopupMostrarTítulo;       ;      TagSet<       <      TagReset=      &HEEEEEE=   
+   CorEstado0>      &HC7E7D0>   
+   CorEstado1?      &H4F71FB?   
+   CorEstado2@       @      Estado0A       A      Estado1B       B      Estado2C       C      Figura0D       D      Figura1E       E      Figura2F       F      item1GenéricoÁ@ô±é¾ “ƒ|¸¤(÷æıè•|‰fmò°'Œİ§òöo_ÓÉsqBGNL   
+     <     ko3‰îòNâ^â z 6©3 À“9êâbôÄ#AZ•\(nœ¶?[n‹LíLĞ…>uÿ lGŸø$‘· 0-ê—{$DƒsãlfÏJôËŞcí¦”£y}³³òsPxpêZKæO                ÿÿ e               Fórmula             Título      33      Atualização      100      FP      0      EPAG      LTexto      Objeto             Valor             "Set Point"	      0	      Alarme 1
+      0
+      Alarme 2      -2147483633      Cor do fundo      0      UltTempo      0      Cor da frente             Unidade             "Status"      0      Alarmes      0      Mostra Título   	   USINAGEM2      Nome      18      Itens      6358604      propdial             EVENT      1      Visibilidade      1      _VisibilidadeAnterior             linob      0      EX1      0      EY1      0      EX2      0      EY2      0   	   Desenha3D      0   	   Textura3D             emulti    
+   USINAGEM 2       Texto!      0!      Tamanho"      1"      Transparente#      0#      Alinhamento$      0$      Borda%      &H000000%      Cor da borda&      Arial&      Fonte'      0'      Bold(      0(      Itálico)      0)      Borda3D*      0*      Editar+      Digite o valor aqui:+      EditarTexto,      Entrada,      EditarTítulo-      0-      Pos. Título.      5.      Largura/      0/      Enviar SetPoint0       0      Comando1       1      FormatoGenérico‰a‘;äGÌ‹ô´KÓ£®†È—¤ªB/Ê€Œƒ?(Ç[’»x*K•qBGNL,  
+   Ÿ  <     ÷õ/ÊÙ†1HÈë½ëíQõ¦Ô"™çx’%µnèñ£Ö@.*DÈoì]è¼ÿ ì–ã9Ã¦‚{4+“¼5€eˆ‹\ù—•“2lËHùHRnª· o˜2;.’g                ÿÿ ¥        Tag1      Fórmula             Título      33      Atualização      100      FP      0      EPAG      Button      Objeto             Valor             "Set Point"	      0	      Alarme 1
+      0
+      Alarme 2      16777215      Cor do fundo      44437,9657368981      UltTempo      -2147483633      Cor da frente             Unidade             "Status"      0      Alarmes      0      Mostra Título      button5      Nome      39      Itens      6358604      propdial             EVENT      1      Visibilidade      1      _VisibilidadeAnterior             linob      0      EX1      0      EY1      0      EX2      0      EY2      0   	   Desenha3D      0   	   Textura3D             emulti       Geral       Texto!       !      Comando"      4"      Margem#      12#      Letra$   
+   &H02333333$      Cor do texto%      1%      Bold&      1&      Fundo'      Geral'      Pagina(       (   	   Relatorio)      1)      Alto*      0*      Baixo+      0+      Pulso,       ,      PaginaPopup-      0-   
+   AlterarTag.      0.      HotSpot/      0/      TextoIgualTitulo0       0      Figura1       1      PaginaPlanta3D2      02      DependeDeSenha3       3   
+   Privilégio4      14      Estilo5      15      MensagemAguardar6       6      PopupLargura7       7      PopupAltura8       8      PopupX9       9      PopupY:      1:      PopupMostrarTítulo;       ;      TagSet<       <      TagReset=      &HEEEEEE=   
+   CorEstado0>      &HC7E7D0>   
+   CorEstado1?      &H4F71FB?   
+   CorEstado2@       @      Estado0A       A      Estado1B       B      Estado2C       C      Figura0D       D      Figura1E       E      Figura2F       F      item1GenéricoOmÂƒE¹œæ¯ÙOÕ0´?€ĞX?‘hû6G˜"û³´ÕŸùÜuÈqBGNL,  
+   Ÿ  <     #Œœ^3Ê1åÙ©£«	şccóóØù-ÎböŠX“ĞfJÔÉ_X¦¼ü¬Ç„…~m]ÿ …,Ä|T·8‡ş æ
+Á’OÚwÇ¦·s}3 ó?ƒºx»iHFIãÇÏ÷¦¡›                ÿÿ ¤        Tag1      Fórmula             Título      33      Atualização      100      FP      0      EPAG      Button      Objeto             Valor             "Set Point"	      0	      Alarme 1
+      0
+      Alarme 2      16777215      Cor do fundo      44437,965678912      UltTempo      -2147483633      Cor da frente             Unidade             "Status"      0      Alarmes      0      Mostra Título      button6      Nome      39      Itens      6358604      propdial             EVENT      1      Visibilidade      1      _VisibilidadeAnterior             linob      0      EX1      0      EY1      0      EX2      0      EY2      0   	   Desenha3D      0   	   Textura3D             emulti       Geral       Texto!       !      Comando"      4"      Margem#      12#      Letra$   
+   &H02333333$      Cor do texto%      1%      Bold&      1&      Fundo'      Geral'      Pagina(       (   	   Relatorio)      1)      Alto*      0*      Baixo+      0+      Pulso,       ,      PaginaPopup-      0-   
+   AlterarTag.      0.      HotSpot/      0/      TextoIgualTitulo0       0      Figura1       1      PaginaPlanta3D2      02      DependeDeSenha3       3   
+   Privilégio4      14      Estilo5      15      MensagemAguardar6       6      PopupLargura7       7      PopupAltura8       8      PopupX9       9      PopupY:      1:      PopupMostrarTítulo;       ;      TagSet<       <      TagReset=      &HEEEEEE=   
+   CorEstado0>      &HC7E7D0>   
+   CorEstado1?      &H4F71FB?   
+   CorEstado2@       @      Estado0A       A      Estado1B       B      Estado2C       C      Figura0D       D      Figura1E       E      Figura2F       F      item1GenéricoBÉÃŠUÄ^1 "eïÜB´š%×òßÌaäî´ÓĞáJèâÜ¤F×ÕqBGNL   
+     <     iW‹ëUcthiÜcS©†.Âæ¿DéÏ€ç¿¾ÜÌ~=¹ }ä*™­É˜/¸×
+ÿ ‡QpE†·„ı]Ë0:ïY¤ÂF ù#ÓñZUîƒ«eí€¾P°ÆF¡™                ÿÿ b               Fórmula             Título      33      Atualização      100      FP      0      EPAG      LTexto      Objeto             Valor             "Set Point"	      0	      Alarme 1
+      0
+      Alarme 2      -2147483633      Cor do fundo      0      UltTempo      0      Cor da frente             Unidade             "Status"      0      Alarmes      0      Mostra Título      MONTAGEM      Nome      18      Itens      6358604      propdial             EVENT      1      Visibilidade      1      _VisibilidadeAnterior             linob      0      EX1      0      EY1      0      EX2      0      EY2      0   	   Desenha3D      0   	   Textura3D             emulti       MONTAGEM       Texto!      0!      Tamanho"      1"      Transparente#      0#      Alinhamento$      0$      Borda%      &H000000%      Cor da borda&      Arial&      Fonte'      0'      Bold(      0(      Itálico)      0)      Borda3D*      0*      Editar+      Digite o valor aqui:+      EditarTexto,      Entrada,      EditarTítulo-      0-      Pos. Título.      5.      Largura/      0/      Enviar SetPoint0       0      Comando1       1      FormatoGenérico™ÕQ]^µ¾•A²º,œÎøŠ‰ˆ*zİ4wdy‡+ğæ ¶é€qBGNL©  
+     <     Ä·ğÔ,Ãì~-Qºs×ßƒÜc:†áí–¼ÏÌ6êv‡4Ï»n/‹ONİ”èPğÍğÿ ¥Ñ}9#Â©™“Æ	O ¬X˜Àc_İ]¼ô¨~9]F ('s~e80•Ó                ÿÿ ¥        Tag1      Fórmula             Título      33      Atualização      100      FP      0      EPAG      Button      Objeto             Valor             "Set Point"	      0	      Alarme 1
+      0
+      Alarme 2      16777215      Cor do fundo      44437,9655053819      UltTempo      -2147483633      Cor da frente             Unidade             "Status"      0      Alarmes      0      Mostra Título      button7      Nome      39      Itens      6358604      propdial             EVENT      1      Visibilidade      1      _VisibilidadeAnterior             linob      0      EX1      0      EY1      0      EX2      0      EY2      0   	   Desenha3D      0   	   Textura3D             emulti       Geral       Texto!       !      Comando"      4"      Margem#      12#      Letra$   
+   &H02333333$      Cor do texto%      1%      Bold&      1&      Fundo'      Geral'      Pagina(       (   	   Relatorio)      1)      Alto*      0*      Baixo+      0+      Pulso,       ,      PaginaPopup-      0-   
+   AlterarTag.      0.      HotSpot/      0/      TextoIgualTitulo0       0      Figura1       1      PaginaPlanta3D2      02      DependeDeSenha3       3   
+   Privilégio4      14      Estilo5      15      MensagemAguardar6       6      PopupLargura7       7      PopupAltura8       8      PopupX9       9      PopupY:      1:      PopupMostrarTítulo;       ;      TagSet<       <      TagReset=      &HEEEEEE=   
+   CorEstado0>      &HC7E7D0>   
+   CorEstado1?      &H4F71FB?   
+   CorEstado2@       @      Estado0A       A      Estado1B       B      Estado2C       C      Figura0D       D      Figura1E       E      Figura2F       F      item1Genérico{x^Õ­œÛ ·°a)#9¬†œdšß`}¦=¿Š‰¹’	i$O&¼¬üqBGNL   
+   Ÿ  <     èOO"Z~ùºjÓ3^@Ã|m°öbêÕ’1AúÙ€)óœÑ¤³¨º¦Z‡íÊ{»ÿ CàÑ'!e@ĞféíÌ¯©”Ä¤Ä;gû°vù7íoc=]wFã,U99                ÿÿ f               Fórmula             Título      33      Atualização      100      FP      0      EPAG      LTexto      Objeto             Valor             "Set Point"	      0	      Alarme 1
+      0
+      Alarme 2      -2147483633      Cor do fundo      0      UltTempo      0      Cor da frente             Unidade             "Status"      0      Alarmes      0      Mostra Título      SELETOR      Nome      18      Itens      6358604      propdial             EVENT      1      Visibilidade      1      _VisibilidadeAnterior             linob      0      EX1      0      EY1      0      EX2      0      EY2      0   	   Desenha3D      0   	   Textura3D             emulti       ARMAZENAMENTO       Texto!      0!      Tamanho"      1"      Transparente#      0#      Alinhamento$      0$      Borda%      &H000000%      Cor da borda&      Arial&      Fonte'      0'      Bold(      0(      Itálico)      0)      Borda3D*      0*      Editar+      Digite o valor aqui:+      EditarTexto,      Entrada,      EditarTítulo-      0-      Pos. Título.      5.      Largura/      0/      Enviar SetPoint0       0      Comando1       1      FormatoGenéricoÈƒ™[#tMêÅ—Ñâ‚C|y˜dŞu®a(üğ‰ vkœ‡Æ¼ÓÒqBGNL’  P   ñ  s     «kqÂVT×˜åÃY{¥À:ÀÀ‘Ïö¬÷hZ²¡0¶fÇ±ÃææâÂğª4y¹\ÿ ¨×`˜JŒ(Éh=¦àî1¶!ôy‡aæ(r…D?fÕ=[ÑÜhc 0?d™^
+                 ÿÿ ¢        Tag1      Fórmula             Título      33      Atualização      100      FP      0      EPAG      Button      Objeto             Valor             "Set Point"	      0	      Alarme 1
+      0
+      Alarme 2      16777215      Cor do fundo      44437,965825162      UltTempo      -2147483633      Cor da frente             Unidade             "Status"      0      Alarmes      0      Mostra Título      button4      Nome      39      Itens      6358604      propdial             EVENT      1      Visibilidade      1      _VisibilidadeAnterior             linob      0      EX1      0      EY1      0      EX2      0      EY2      0   	   Desenha3D      0   	   Textura3D             emulti       Seletor       Texto!       !      Comando"      4"      Margem#      10#      Letra$   
+   &H02333333$      Cor do texto%      1%      Bold&      1&      Fundo'      4'      Pagina(       (   	   Relatorio)      1)      Alto*      0*      Baixo+      0+      Pulso,       ,      PaginaPopup-      0-   
+   AlterarTag.      0.      HotSpot/      0/      TextoIgualTitulo0       0      Figura1       1      PaginaPlanta3D2      02      DependeDeSenha3       3   
+   Privilégio4      14      Estilo5      15      MensagemAguardar6       6      PopupLargura7       7      PopupAltura8       8      PopupX9       9      PopupY:      1:      PopupMostrarTítulo;       ;      TagSet<       <      TagReset=      &HEEEEEE=   
+   CorEstado0>      &HC7E7D0>   
+   CorEstado1?      &H4F71FB?   
+   CorEstado2@       @      Estado0A       A      Estado1B       B      Estado2C       C      Figura0D       D      Figura1E       E      Figura2F       F      item1FigurasP­¥{Åt¤‘ÒH\Š¿tıËdüIË{«¯µ“~°Ä‘´óÅ÷*qBGNL•  ¸  Ç  ê    ’¸D±wù¾dc—¾yÕ®ÔÖ»¸=ŞïŒ”¼Ü¡ˆfän¤Wa D]F¸Ã[Jÿ âÚgÜÍRúL	¾ºÍö0Dh: l)G)•Ó‹ÌŠÆ-s9{é
+À-%Wƒ7t                 ÿÿ û        L_Cor2      Fórmula             Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      lâmpada verde.jpg      Figura      525546      propdial      Cor2      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   @   Lâmpada.jpg
+Lâmpada Azul.jpg
+Lâmpada Verde.jpg
+
+
+
+
+
+
+
+"      FigurasFigurai+®ÏÚ…³w—OõË_)·¯¬•v8Îıº«×µR–¶¸Û[—~Q;"8qBGNLå  #     U     ´Ë'ú·/½~!İz`RpÈQâ†Éâ7£úòİV.¹Ï;^›øÑ.b[Gpÿ è‘òŞDP‚ÒµZºÂYÀxså{='Z¸†jcfT,Î|Ë5Òåév‡¹ßetU¹c                 ÿÿ û        L_Cor3      Fórmula             Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      lâmpada verde.jpg      Figura      525546      propdial      Cor3      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   @   Lâmpada.jpg
+Lâmpada Azul.jpg
+Lâmpada Verde.jpg
+
+
+
+
+
+
+
+"      FigurasFiguraî€êöäö;í\d•Re§Û¹©úİiY[¡¦„Şj3ôKµó¸b°íÌqBGNLÇ  ¸  ù  ê    ¢ÜÀ=³}@¬ª6ô‹Èk4rˆr·Í`1UwœÍÅƒë¹¾õô®bg¡şÿ À`ûôcW°	!ŠHøüzåÖP¦»dZíwM‘àÈ¹å‚9gêÏèšê¢Kä                 ÿÿ 
+     	   L_Difuso2      Fórmula             Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      lâmpada vermelha.jpg      Figura      525546      propdial      Difuso2      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   F   Lâmpada.jpg
+Lâmpada Amarela.jpg
+Lâmpada Vermelha.jpg
+
+
+
+
+
+
+
+"      FigurasFiguraüŞZ'¯¼Ÿ‹"§ÌGéìª<ø‰P
+Xºó œ–.`n¬¼¯|qBGNLå  d     –     Î0cMË¸+g–é8ÏQ¸A©Ï c>ëş5®Ÿ
+‚aAD„ â]^Ãh÷ğy{xŞ¤ÿ .•û‹SA7ŠİëÃˆ¹Ê†ÚôzãV>òšêäûãÅÜ<£7DÂ°@ğ§[ÚvoWY                 ÿÿ         L_Uso4      Fórmula             Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      lâmpada vermelha.jpg      Figura      525546      propdial      Uso4      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   F   Lâmpada.jpg
+Lâmpada Amarela.jpg
+Lâmpada Vermelha.jpg
+
+
+
+
+
+
+
+"      FigurasGenérico_‰bTp0ë»ÆTBÍreªs\@hòCšmAõórPî$q:QvÁqBGNL‡   <   ´   i     œk–>°ªñ„EG‡4Kªjİ)3òG9Â÷•ƒÇØ‰ $Á_¾·ël([¾¥]õ(¨ÿ ÆáÂ˜ÓoğüÛ7Ç`EH6îŞvW¬¯T¹Jƒ[ÒL¦5¹Ã`ò«,Oe7sx3eH…                 ÿÿ ò     
+   Grupo_tag2      Fórmula             Título      33      Atualização      100      FP      0      EPAG      outros\chaves\check      Objeto             Valor      0      "Set Point"	      0	      Alarme 1
+      0
+      Alarme 2      8421504      Cor do fundo      44437,9658251852      UltTempo      65280      Cor da frente             Unidade             "Status"      0      Alarmes      1      Mostra Título      check2      Nome      13      Itens      6358604      propdial             EVENT      1      Visibilidade      1      _VisibilidadeAnterior             linob      0      EX1      0      EY1      0      EX2      0      EY2      0   	   Desenha3D      0   	   Textura3D             emulti               Comando!      2!      Estado"       "      TextoLigado#       #      TextoDesligado$      1$      PosTexto%   
+   &H02000000%      CorTexto&   
+   &H8000000F&      CorFundoTexto'      1'      Alto(      0(      Baixo)      1)      Transparente*       *   	   TagAtivar+       +      TagDesativar,      0,      MensagemAguardarFigurağêi¢?2+Ü}‹§0¥Éz‹ó‹wî+!˜îvtn¹³eÔ¾tbfK»qBGNLÃ   7   õ   i     Cº¦õ·•‹vfíl]×áï8éXJŠL.ÍŠ5ôa†ÖéÉPnGª³ÿ ¨¾áqêLè³9°õóX`E¨¿5¡• Ÿ, ¹ÖzqF©ïQF<Mn 4ÇTÜ·                 ÿÿ ş        tag3      Fórmula             Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      1      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      lâmpada verde.jpg      Figura      525546      propdial   	   Lampada11      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   @   Lâmpada.jpg
+Lâmpada Azul.jpg
+Lâmpada Verde.jpg
+
+
+
+
+
+
+
+"      FigurasFiguraÒ›ã>r“©áëJzÍáŸÄA§„“ØòƒGº¦e^¼pñ|³ZˆıwÏÉ—U¥˜qBGNLÆ  <   ø  ‡     ãÙ3ÑM‡›ZH>Dç”Qe±×ÛA¥íVàçüÎ÷/Bqò<q>	½Şô²Æ[÷ÿ ˆ¶¦ÛşÜs˜©€…Çæ™·*â×÷Œx%’³x‚R<W©:g©ŠB	‰!RT÷/                 ÿÿ ú        -R_Rolo1      Fórmula      0      Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      180      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      270 rolos ativos.jpg      Figura      525546      propdial      Rolo1      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   5   270 Rolos.jpg
+270 Rolos ativos.jpg
+
+
+
+
+
+
+
+
+"      FigurasFiguraÓP–6ÅÌ2.ÆÀÌGŠO2›‹|eêĞVñšªäÆeoCçå¸RqBGNLı  ‡   k  ¹     Zø’Åšcn€}OâtÎPZ›E¸ãZëşŠøi¼QšÉ›
+ğxB™Rh*g_öÿ øİ 3¿qK@z¶e8€€+á–—É1º›K–õ[Pê‹°*72>#ae8<îü¢÷Ç                 ÿÿ ì        -R_Rolo2      Fórmula      0      Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      rolos ativos.jpg      Figura      525546      propdial      Rolo2      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   -   Rolos.jpg
+Rolos ativos.jpg
+
+
+
+
+
+
+
+
+"      FigurasFigura/;›0c ?*R³Ö	cÖ‘únhà©bœ,Rßò'~¢¼ø¸»ã|Û£qBGNLÆ  ‡   ø  ¹     Wk¼o6dg³ç—×
+8³IŠBæ7~Á0Ê-oÏØD·	·qxµ9LtĞvnå#*Üÿ Ù×Ò j9“P;_6¢’ëÏÅK¨ŸĞu8¸=D	a‰¯6üä‡M˜}»¥                 ÿÿ         -E_Empurrador      Fórmula      0      Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      270      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      empurrador ativo.jpg      Figura      525546      propdial   
+   Empurrador      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   6   Empurrador.jpg
+Empurrador ativo.jpg
+
+
+
+
+
+
+
+
+"      FigurasFigura4H\™ibay,\»™¤†Î¬'¬dòÇ”ËÂî_¢Ë»ú”¥ã¨M‡`qqBGNL¢  ‡   ü  ×     #åĞEàùŒ€c÷ià …È!½ØË[´Äµb—sÉˆƒû-šEUÊ­´-
+²Ùsÿ ĞDÀêÆbmµW×ÌA’$JêsĞ„ÒgRµòÊÉ~'JÔ†Ñ‹±–Íe¤å´„                 ÿÿ <        -A_Fork      Fórmula      0      Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      -90      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      fork alto azul.jpg      Figura      525546      propdial      Fork      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   {   Fork baixo.jpg
+Fork baixo verde.jpg
+Fork baixo azul.jpg
+Fork alto.jpg
+Fork alto verde.jpg
+Fork alto azul.jpg
+
+
+
+
+"      FigurasFiguraPËæÀŸ
+¨Ä+­QO²R9\+’ÂÀy~j éy¨e.Ñh˜I¡K@ñİqBGNLk  ‡   §  ¹     À–d»ùö0l¢À$qwŒM_“Àê7¯²|ç†UÕ5–V©äÜ¹îíRØ¥cU-è?ÿ ³X[-DÖ‹OË ‘Qá{»†¬<ƒ‚èN@Ô]X÷G*¡Ú€ÕÔz<]5Aå£€N£&                 ÿÿ ç        -R_Load1      Fórmula      0      Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      load ativo.jpg      Figura      525546      propdial      Load1      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   *   load.jpg
+Load ativo.jpg
+
+
+
+
+
+
+
+
+"      FigurasFiguraˆ9*—W¿Çë¢ßšj”i(óô`<ÃıR‹á†ë;û™a%QD©2Š!qBGNL÷  ‡   3  ¹     ?½Ã›ù‰Á8åØ¨®ùz¹G™xkAkò‚1SÙŠ-%;ÏC¶:ÑXíj´?‘Pÿ 2jØYé6fgUäKEî­AÕ®3~ğf¶{ĞüÆEµ,Í*ŒO¿3ğoı„                 ÿÿ æ        -R_Load2      Fórmula      0      Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      load ativo.jpg      Figura      525546      propdial      Load2      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   *   load.jpg
+Load ativo.jpg
+
+
+
+
+
+
+
+
+"      FigurasFigurat‡ş¤$ùû¡ë…š[ª¨ ÏgT«y8;ôöŸ>aKS—P °qBGNL3  ‡   ¡  ¹     cMqığ4l[ûÈ	3cÍäqbNª(Nd Ú¶<:îËK}½Ë|-ÒHJ‚ñ¥l$ÿ Ç	ˆx;:n'Ö3óír€EŠŞ0êîÒ~2?¡{Ã÷[Íë(ï‹`ó§Ü„                 ÿÿ ë        -R_Rolo3      Fórmula      0      Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      rolos ativos.jpg      Figura      525546      propdial      Rolo3      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   -   Rolos.jpg
+Rolos ativos.jpg
+
+
+
+
+
+
+
+
+"      FigurasGenérico‡‡õÜAéÛƒ~árErK™¢‡¥`ûîyTÃ¨¶5R"Ç	Gº€®Um÷qBGNLo  ë   ¡      ?£õ‘‰¤bz~ä©j‹6a6djÓpmVÕ‚í¦ Ÿ!ìØŸö‘4£í‰àÿ D^ŒÄœv
+L_Ï(ĞB¬c6Ì'ñå4Ñob+ ™2FQÁ•_°‡6‚×]M7v–­                 ÿÿ [               Fórmula             Título      33      Atualização      100      FP      0      EPAG      LTexto      Objeto             Valor             "Set Point"	      0	      Alarme 1
+      0
+      Alarme 2      -2147483633      Cor do fundo      0      UltTempo      0      Cor da frente             Unidade             "Status"      0      Alarmes      0      Mostra Título      Text7      Nome      18      Itens      6358604      propdial             EVENT      1      Visibilidade      1      _VisibilidadeAnterior             linob      0      EX1      0      EY1      0      EX2      0      EY2      0   	   Desenha3D      0   	   Textura3D             emulti       Cor       Texto!      12!      Tamanho"      1"      Transparente#      1#      Alinhamento$      0$      Borda%      &H000000%      Cor da borda&      Arial&      Fonte'      0'      Bold(      0(      Itálico)      0)      Borda3D*      0*      Editar+      Digite o valor aqui:+      EditarTexto,      Entrada,      EditarTítulo-      0-      Pos. Título.      5.      Largura/      0/      Enviar SetPoint0       0      Comando1       1      FormatoFigura‰ê”°/|ÔnEOš!òFÏÀ„4/|Ôâï*$½BÜv`@|òâqBGNLo  ¹   ¡  ë     Êwp2Ówİ(o˜rQí€9kë~áÖK×ÔIª'ÁúLÎ?¹â«$ñÓ”]ÿ ª<%b<ù1®·”‹ŒJ¬<«ÖSD‹>›²iQ‚ÀX‰”m•÷µçX}SbĞ”n                 ÿÿ û        L_Cor4      Fórmula             Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      lâmpada verde.jpg      Figura      525546      propdial      Cor4      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   @   Lâmpada.jpg
+Lâmpada Azul.jpg
+Lâmpada Verde.jpg
+
+
+
+
+
+
+
+"      FigurasGenérico¿”¨Ã¡ğ'¨QÃü½ j¤0[=zX²ê«yüå¤©Sñ»ˆa>4¡qBGNL“  U     x     ãÌô¬æÏéĞíÒØl¥õòØP˜ª?í–T1ÂâTJe{2
+n9&Ô¹D]:<”t;ÿ e1ÇZ<‡ş«„jvZx³Tı>*Œi<‡”¶uAt1™ÉRİõM&]¨<İC                 ÿÿ ¬        R_Rolo3      Fórmula             Título      33      Atualização      100      FP      0      EPAG      Button      Objeto             Valor             "Set Point"	      0	      Alarme 1
+      0
+      Alarme 2      16777215      Cor do fundo      44437,9658252315      UltTempo      -2147483633      Cor da frente             Unidade             "Status"      0      Alarmes      0      Mostra Título      button8      Nome      39      Itens      6358604      propdial             EVENT      1      Visibilidade      1      _VisibilidadeAnterior             linob      0      EX1      0      EY1      0      EX2      0      EY2      0   	   Desenha3D      0   	   Textura3D             emulti       Armazenamento       Texto!       !      Comando"      4"      Margem#      10#      Letra$   
+   &H02333333$      Cor do texto%      1%      Bold&      1&      Fundo'      4'      Pagina(       (   	   Relatorio)      1)      Alto*      0*      Baixo+      0+      Pulso,       ,      PaginaPopup-      0-   
+   AlterarTag.      0.      HotSpot/      0/      TextoIgualTitulo0       0      Figura1       1      PaginaPlanta3D2      02      DependeDeSenha3       3   
+   Privilégio4      14      Estilo5      15      MensagemAguardar6       6      PopupLargura7       7      PopupAltura8       8      PopupX9       9      PopupY:      1:      PopupMostrarTítulo;       ;      TagSet<       <      TagReset=      &HEEEEEE=   
+   CorEstado0>      &HC7E7D0>   
+   CorEstado1?      &H4F71FB?   
+   CorEstado2@       @      Estado0A       A      Estado1B       B      Estado2C       C      Figura0D       D      Figura1E       E      Figura2F       F      item1Figurañ½¥²ÍG‰’ß¼} b87{‘n»PŸ [ìÉ#5&TØI†ø2«ƒ¨8|qBGNL¶     è  K     Ævn¼H§´A0Ïì×·ãVO'\«æ‡Ë±äı¥ {Ú(àª`€áV+‹?…m•ªÿ >šEÎ”ğaaã]1+Q/&Åè‚	
+¡+”²œä¦C!p£5‹Sö®ñ?ÖF                 ÿÿ Ô        L_Uso5      Fórmula             Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      lâmpada.jpg      Figura      525546      propdial      Uso5      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"      Lâmpada.jpg
+
+
+
+
+
+
+
+
+
+"      FigurasGenéricox²6(ú¸×'S
+H›æXKéèQ%’Èê75õgKPÌÔ~BÅêqBGNLW  ¯   »      y(,<bE®øaw¶L`9ñÍOä^]¯q§ElY©2CÄÄ”Å ¾²?ÜË²9ÑÓÿ zqe£§>V±e¿—ÄŒƒ©ÎVVQ¿îƒ7vû‹*uúBÔj£Â
+¥»qÒeš÷À                 ÿÿ b               Fórmula             Título      33      Atualização      100      FP      0      EPAG      LTexto      Objeto             Valor             "Set Point"	      0	      Alarme 1
+      0
+      Alarme 2      -2147483633      Cor do fundo      0      UltTempo      0      Cor da frente             Unidade             "Status"      0      Alarmes      0      Mostra Título      Text8      Nome      18      Itens      6358604      propdial             EVENT      1      Visibilidade      1      _VisibilidadeAnterior             linob      0      EX1      0      EY1      0      EX2      0      EY2      0   	   Desenha3D      0   	   Textura3D             emulti    
+   Cor ou uso       Texto!      12!      Tamanho"      1"      Transparente#      1#      Alinhamento$      0$      Borda%      &H000000%      Cor da borda&      Arial&      Fonte'      0'      Bold(      0(      Itálico)      0)      Borda3D*      0*      Editar+      Digite o valor aqui:+      EditarTexto,      Entrada,      EditarTítulo-      0-      Pos. Título.      5.      Largura/      0/      Enviar SetPoint0       0      Comando1       1      FormatoFiguraÌÍcş4&_»hsTˆy)µlDÆÓ–#›
+ß/n¹-f¢ŒTĞ°w™©èù8qBGNL   K   b  ¤    }Ö7w„kæ¶$cÊ³XzZGGa¾òÂH9^­yW‡ªç¸D®3yawÃ9«°êæ‰ÿ °Íˆ‹µM”^’…Oì†E*™R`>4Ø+,v*ÊïõE]‰w|~İêÕ€</İw                ÿÿ ø               Fórmula             Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      usinagem fechada.jpg      Figura      525546      propdial      Picture1      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   ;   Usinagem aberta.jpg
+Usinagem fechada.jpg
+
+
+
+
+
+
+
+
+"      FigurasGenérico«Xm Û%í"ŠŒ¨>÷!Üd5ÁZ‹H{Æ¹à=¥™^@v#]ÌšRqBGNLq  Z   ¼  |    éÄ(f¨ŞZú¹%Uªï*	äk)9BuX0Ÿ~œÓWó¯Pl²\ºlĞÿ j–¼c~óÉ™†CmŞXOp”Z¯ùGˆ{’œ§lEJ)½%Ğ}·ª¤¡T­möÁ'M                ÿÿ ÷        Grupo      Fórmula             Título      33      Atualização      100      FP      0      EPAG      Slide      Objeto             Valor             "Set Point"	      0	      Alarme 1
+      0
+      Alarme 2      -2147483633      Cor do fundo      44437,9657303357      UltTempo      0      Cor da frente             Unidade             "Status"      0      Alarmes      1      Mostra Título      slide1      Nome      6      Itens      6358604      propdial             EVENT      1      Visibilidade      1      _VisibilidadeAnterior             linob      0      EX1      0      EY1      0      EX2      0      EY2      0   	   Desenha3D      0   	   Textura3D             emulti       100       Máximo!      0!      Mínimo"      0"      Fixo#      10#      Divisões$      0$      Discreto%       %      ComandoGenéricong¢ñÊ.rç%­iK¹ê»¡âÕ~ÛgÙjõ¸deèf­ÛÆ ëqBGNL2   Z   N  n     ÌBv-d±¾ÃI*Ú@ÃN™ømIÅ½^"mETõ!¢*úØßã<©š!ı£LÔ=ÿ X¾l¼„U9Êì´Ã¸~./ø\É›ŞÁ°j@‡êq„Äc±±@»'›öĞß                ÿÿ é        Grupo      Fórmula             Título      33      Atualização      100      FP      0      EPAG      escala      Objeto             Valor             "Set Point"	      0	      Alarme 1
+      0
+      Alarme 2      0      Cor do fundo      44437,9657303357      UltTempo      16777215      Cor da frente             Unidade             "Status"      0      Alarmes      1      Mostra Título      Scale1      Nome      5      Itens      6358604      propdial             EVENT      1      Visibilidade      1      _VisibilidadeAnterior             linob      0      EX1      0      EY1      0      EX2      0      EY2      0   	   Desenha3D      0   	   Textura3D             emulti       0       Mínimo!      100!      Máximo"      11"      Divisões#      1#      Borda$      &H000000$      Cor da escalaFigura\Ì~E×Ğ8ÑÀS2«ç‚–%:íñg›ô.0zõôFvÀÙ©¨qBGNLd   æ   ¥   '    -¢’mˆ†ıcÄÀÉ~,Å,úºw‰ôô*ı?M‰|B\„X›vO¶˜Åõút¨E¡›ÿ K¿_¬F6$>)¡7D}SàlÕÜU: ACL—õ±$§7d2{÷O»h?˜<                ÿÿ         L_Usinagem1      Fórmula             Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      lâmpada vermelha.jpg      Figura      525546      propdial   	   Usinagem1      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   F   Lâmpada.jpg
+Lâmpada Amarela.jpg
+Lâmpada Vermelha.jpg
+
+
+
+
+
+
+
+"      FigurasFiguraÌ Ë·ëu{w¹ÉªÆuïªx“p\ÀÍGyw+§ğy$nf™¶ä%U†qBGNL   K   b  ¤    nâÇT„iU?¡jÂsZP^uåë°×u†ŞÓ.#³×q×­%ø3ĞÆ‰kÌì¥Ì¿<lÿ íµ3hl¦}è?…aÜc°šºow.ê³<@†m”/,|¬xb—öff‰)vŒ :¸£L]                ÿÿ ø               Fórmula             Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      usinagem fechada.jpg      Figura      525546      propdial      Picture2      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   ;   Usinagem aberta.jpg
+Usinagem fechada.jpg
+
+
+
+
+
+
+
+
+"      FigurasGenérico)¶ÖşbäÍ* ¿,ıãK@æ¼§Ï$±§3v!Ìy¬§ÁCØ¯×‘^qBGNLq  Z   ¼  |    Êñ^®(Ù@=€ªõE´ô9©4ÕÎ‘ „Æ=Èúğ)—½lc•ï]ßåãã¬Ä]—X‰€ÿ NÑÜ4„kB£zû%ù·Ã	ßÊ`èH0Ò)óàd{yáû›/ƒ¿’/¿ĞöLÖ                ÿÿ ù        Grupo      Fórmula             Título      33      Atualização      100      FP      0      EPAG      Slide      Objeto             Valor             "Set Point"	      0	      Alarme 1
+      0
+      Alarme 2      -2147483633      Cor do fundo      44437,9657369444      UltTempo      0      Cor da frente             Unidade             "Status"      0      Alarmes      1      Mostra Título      Picture3      Nome      6      Itens      6358604      propdial             EVENT      1      Visibilidade      1      _VisibilidadeAnterior             linob      0      EX1      0      EY1      0      EX2      0      EY2      0   	   Desenha3D      0   	   Textura3D             emulti       100       Máximo!      0!      Mínimo"      0"      Fixo#      10#      Divisões$      0$      Discreto%       %      ComandoGenérico|zâëÇ>£¨¸±ĞŞê;©¡2Mô£çø€ÑË7İkææò,Şyê?qBGNL2   Z   N  n     ã'Ç{Î˜ƒ‚¶äG(E4°ÃùKÙDĞcOÎ3<¡B”-ÅL Ù•C¦>R¾Å/Êrÿ Ã—(qğìZeÎ\xqa«°6e¤r+ë<]c®°ü«×²8õG'#şñs                ÿÿ ë        Grupo      Fórmula             Título      33      Atualização      100      FP      0      EPAG      escala      Objeto             Valor             "Set Point"	      0	      Alarme 1
+      0
+      Alarme 2      0      Cor do fundo      44437,9657369444      UltTempo      16777215      Cor da frente             Unidade             "Status"      0      Alarmes      1      Mostra Título      Picture4      Nome      5      Itens      6358604      propdial             EVENT      1      Visibilidade      1      _VisibilidadeAnterior             linob      0      EX1      0      EY1      0      EX2      0      EY2      0   	   Desenha3D      0   	   Textura3D             emulti       0       Mínimo!      100!      Máximo"      11"      Divisões#      1#      Borda$      &H000000$      Cor da escalaFiguraÒN‹Niİ„&WH=z×_WÂò¨»c¢¢»Ã£ˆåšÄ×IÑ%wöqBGNLd   æ   ¥   '    ou&êhÜgyÄ\4Ãê"ÕÙcZı~dÃœ@ªÛßá°°ŒGá aáiÿ ßïm$™ AaËeƒCoZJ4Ô,?ãÂVØ¨ Õò½ö‡ú(;\%Âs0Â‚,xx                ÿÿ         L_Usinagem2      Fórmula             Valor      0      Alarme 1      0      Alarme 2      0      "Set Point"      1      Fixo      0      Transparente      0      ValorEstado	      0	      CliqueDuplo
+       
+      Título      16      Tamanho      0      Rotate             EVENT             Comando      0      Duplo      0      3D      250      Atualização      0      UltTempo             Unidade             "Status"      1   	   Antialias      1      Mostra Título      -2147483633      Cor do fundo      lâmpada vermelha.jpg      Figura      525546      propdial   	   Usinagem2      Nome      1      Visibilidade      0      Quadro      0      Quadros      1      _VisibilidadeAnterior      6460212      linob       1       Alto!      0!      Baixo"   F   Lâmpada.jpg
+Lâmpada Amarela.jpg
+Lâmpada Vermelha.jpg
+
+
+
+
+
+
+
+"      FigurasÜ  á             ÓÓÓ®®®            ¬û
+   PP¹1C[!;0à=¦_ã	lYº>9?İ°3\4g±…YHMÆ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ           ¤oHçfp(Ô2 6ØUp®úCS³`İ}eğõ@Az÷p Äõ,`Ì¤?1ŠöÓ? ì¯‘Òä‹˜¡÷†ù“¨                              ÿÿÿÿÿÿ        T   ê   Â   ]  USINAGEM 1          ÓÓÓ®®®            àÓ
+   ÌI¹1€æ“P‘Èå0ésZ§êQ¯ ĞI ¬%7\uöÄ   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ           &ÕÃÈ2hR{GK[Êq§|u+ç½ÓâñFè§ –.‰ÂÚó¾DR|“>¦ öwò±%¾0ÆŠ>Š%                             ÿÿÿÿÿÿ          ï   ı  b  USINAGEM 2          ÓÓÓ®®®            4¡
+   ÔrÍ1Åtpu}#ÕÉYGÃ9—²p0Ô˜Ó„şàëõi   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ           anê#¡Tõ÷*?Û©Ò•˜Á§ÉŞ¦üõic
+ ÑìÜ' NtDi6–Ÿ C|Y5¨)–„ı·¯^Ô	r                             ÿÿÿÿÿÿ        >  ¸   §  N  rectangle1          ÓÓÓ®®®           `A
+   $;¹1ó-oı0ô=Y¸œ‡!… 3Å>czà—¼¯›—ë   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ           ¾Í ƒ0L3´Z1xS›rOih;4vghúpîÑÕ¶ j/JB1.KfÔ%³	ÊÎ²¥n)á4 JÏf!6·                              ÿÿÿÿÿÿ          @      	   rectangle2          ÓÓÓ®®®           tA
+   œ?¹1ã5På‰E»ß‚¾*­ÂºÕ[¶l¿W±   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ           RÎü“ƒ¦œKˆo\$/`òœ„†²xa¨ì½#v×Í ÔŞh§0Ùø\Ê¾²TíiÅõQHÓ}¬—×cëc£                              ÿÿÿÿÿÿ           	     @   rectangle3          ÓÓÓ®®®           ˆA
+   äí¤1¾‘	r&®œ ö3ì¥&3÷9#Sc±‚t3°°Ô   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ           &½ÉÃ@š‚D¥JF]qxtc|uçÂß»ªba/ó³ ıÂRÂ{U=¯ñ»wî³ÀS¬à¾^_pPùá0                              ÿÿÿÿÿÿ           	     @   rectangle4          ÓÓÓ®®®            œA
+   x;¹1{›¢¡—/|SƒOL\ªºtV+]uµ¼Õk4D8¹   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ           î÷‘2÷ëÏØú"m¨Ìk³=ú˜q±ÅMÊÒ ï´n¿›°:Áy;§pŠvR¦"Ì*‡û}Ñçœ                              ÿÿÿÿÿÿ             
+     rectangle5          ÓÓÓ®®®           XkC
+   ümÔ1À…Ò$[pÀ¤ú‰gbÔzt–¦º(¡ø<$Õ¯ê'   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ           ä@|!´4ƒŒÓÖN>˜ÚíĞ>¸¯øUÏŞ66Öº×f J¾CÑå:ùd?jûÈ*³Çğ1¾Òƒ\?Ï¿¡t                              ÿÿÿÿÿÿ           	   £  @   rectangle6            <\¢±cí R
