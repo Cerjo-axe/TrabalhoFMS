@@ -57,6 +57,7 @@
         <Node name="SensorDifuso7CLP" type="T_BOOL" access="ReadWrite" />
         <Node name="StopBlade5" type="T_BOOL" access="ReadWrite" />
         <Node name="StopBlade6" type="T_BOOL" access="ReadWrite" />
+        <Node name="TesteCLP" type="T_BOOL" access="ReadWrite" />
         <Node name="VisionSensor3CLP" type="T_BOOL" access="ReadWrite" />
       </Node>
       <Node name="LinhaFabricacao">
@@ -95,6 +96,10 @@
         <Node name="MachinigCenter2ResetCLP" type="T_BOOL" access="ReadWrite" />
         <Node name="MachinigCenter2StartCLP" type="T_BOOL" access="ReadWrite" />
         <Node name="MachinigCenter2StopCLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="Open1CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="Open2CLP" type="T_BOOL" access="ReadWrite" />
+        <Node name="Progress1CLP" type="T_INT" access="ReadWrite" />
+        <Node name="Progress2CLP" type="T_INT" access="ReadWrite" />
       </Node>
       <Node name="SaidaPecas">
         <Node name="RollerConveyot2m2CLP" type="T_BOOL" access="ReadWrite" />

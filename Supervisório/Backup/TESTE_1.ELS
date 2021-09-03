@@ -46,3 +46,9 @@ else
    tag3.value=0
 end if
 End Sub
+Sub Lampada1.OnUpdate
+
+End Sub
+Sub Lampada1.OnClick
+
+End Sub
